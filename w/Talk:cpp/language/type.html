@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>Talk:cpp/language/type - cppreference.com</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.21.2" />
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/mwiki/index.php?title=Talk:cpp/language/type&amp;action=edit" />
+<link rel="edit" title="Edit" href="/mwiki/index.php?title=Talk:cpp/language/type&amp;action=edit" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/mwiki/opensearch_desc.php" title="cppreference.com (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="https://en.cppreference.com/mwiki/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.ColiruCompiler%2CMathJax%2CStandardRevisions%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
+
+<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"Talk","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":1,"wgPageName":"Talk:cpp/language/type","wgTitle":"cpp/language/type","wgCurRevisionId":179411,"wgArticleId":14670,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Talk:cpp/language/type","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+<style type="text/css">/*<![CDATA[*/
+.source-cpp {line-height: normal;}
+.source-cpp li, .source-cpp pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for cpp
+ * CSS class: source-cpp, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.cpp.source-cpp .de1, .cpp.source-cpp .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.cpp.source-cpp  {font-family:monospace;}
+.cpp.source-cpp .imp {font-weight: bold; color: red;}
+.cpp.source-cpp li, .cpp.source-cpp .li1 {font-weight: normal; vertical-align:top;}
+.cpp.source-cpp .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.cpp.source-cpp .li2 {font-weight: bold; vertical-align:top;}
+.cpp.source-cpp .kw1 {color: #0000dd;}
+.cpp.source-cpp .kw2 {color: #0000ff;}
+.cpp.source-cpp .kw3 {color: #0000dd;}
+.cpp.source-cpp .kw4 {color: #0000ff;}
+.cpp.source-cpp .co1 {color: #909090;}
+.cpp.source-cpp .co2 {color: #339900;}
+.cpp.source-cpp .coMULTI {color: #ff0000; font-style: italic;}
+.cpp.source-cpp .es0 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es1 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es2 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es3 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es4 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es5 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .br0 {color: #008000;}
+.cpp.source-cpp .sy0 {color: #008000;}
+.cpp.source-cpp .sy1 {color: #000080;}
+.cpp.source-cpp .sy2 {color: #000040;}
+.cpp.source-cpp .sy3 {color: #000040;}
+.cpp.source-cpp .sy4 {color: #008080;}
+.cpp.source-cpp .st0 {color: #008000;}
+.cpp.source-cpp .nu0 {color: #000080;}
+.cpp.source-cpp .nu6 {color: #000080;}
+.cpp.source-cpp .nu8 {color: #000080;}
+.cpp.source-cpp .nu12 {color: #000080;}
+.cpp.source-cpp .nu16 {color:#000080;}
+.cpp.source-cpp .nu17 {color:#000080;}
+.cpp.source-cpp .nu18 {color:#000080;}
+.cpp.source-cpp .nu19 {color:#000080;}
+.cpp.source-cpp .ln-xtra, .cpp.source-cpp li.ln-xtra, .cpp.source-cpp div.ln-xtra {background-color: #ffc;}
+.cpp.source-cpp span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-1 ns-talk page-Talk_cpp_language_type skin-cppreference2 action-view">
+        <!-- header -->
+        <div id="mw-head" class="noprint">
+            <div id="cpp-head-first-base">
+                <div id="cpp-head-first">
+                    <h5><a href="/">
+                        cppreference.com                        </a></h5>
+                    <div id="cpp-head-search">
+                        
+<!-- 0 -->
+<div id="p-search">
+<form action="https://duckduckgo.com/" method="get">
+  <input type="hidden" name="sites" value="cppreference.com">
+  <input type="search" name="q">
+  <input type="submit" value="Search">
+</form>
+</div>
+
+<!-- /0 -->
+                    </div>
+                    <div id="cpp-head-personal">
+                        
+<!-- 0 -->
+<div id="p-personal" class="">
+<span id="pt-createaccount"><a href="/mwiki/index.php?title=Special:UserLogin&amp;returnto=Talk%3Acpp%2Flanguage%2Ftype&amp;type=signup">Create account</a></span>	<div class="menu">
+        <ul>
+<li id="pt-login"><a href="/mwiki/index.php?title=Special:UserLogin&amp;returnto=Talk%3Acpp%2Flanguage%2Ftype" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>        </ul>
+    </div>
+</div>
+
+<!-- /0 -->
+                    </div>
+
+                </div>
+            </div>
+            <div id="cpp-head-second-base">
+                <div id="cpp-head-second">
+                    <div id="cpp-head-tools-left">
+                        
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li  id="ca-nstab-main"><span><a href="/w/cpp/language/type"  title="View the content page [c]" accesskey="c">Page</a></span></li>
+					<li  id="ca-talk" class="selected"><span><a href="/w/Talk:cpp/language/type"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                    <div id="cpp-head-tools-right">
+                        
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="/w/Talk:cpp/language/type" >View</a></span></li>
+					<li id="ca-edit" class=" istalk"><span><a href="/mwiki/index.php?title=Talk:cpp/language/type&amp;action=edit"  title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></span></li>
+					<li id="ca-addsection" class="collapsible"><span><a href="/mwiki/index.php?title=Talk:cpp/language/type&amp;action=edit&amp;section=new"  title="Start a new section [+]" accesskey="+">+</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="/mwiki/index.php?title=Talk:cpp/language/type&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">History</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /header -->
+        <!-- content -->
+<style type="text/css">
+#carbonads {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  left: -170px;
+  max-width: 150px;
+  border-radius: 4px;
+  border: solid 1px hsla(0, 0%, 0%, .1);
+  background-color: hsl(0, 0%, 98%);
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+  Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#carbonads a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#carbonads a:hover {
+  color: inherit;
+}
+
+#carbonads span {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.carbon-img {
+  display: block;
+  margin-bottom: 8px;
+  max-width: 150px;
+  line-height: 1;
+}
+
+.carbon-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px !important;
+  width: 150px;
+  height: auto;
+}
+
+.carbon-text {
+  display: block;
+  padding: 0 1em 8px;
+}
+
+.carbon-poweredby {
+  display: block;
+  padding: 8px 12px;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1;
+}
+html { font-variant-ligatures: no-common-ligatures; }
+</style>
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYITK7M&placement=cppreferencecom" id="_carbonads_js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading">Talk:cpp/language/type</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    <div id="siteSub">From cppreference.com</div>
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    <div id="contentSub"><span class="subpages">&lt; <a href="/w/Talk:cpp" title="Talk:cpp">Talk:cpp</a>&lrm; | <a href="/w/Talk:cpp/language" title="Talk:cpp/language">language</a></span></div>
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>It might be worth noting that at least back in 2002 it was UB to specialize standard containers with incomplete types. I discussed this problem here: <a rel="nofollow" class="external free" href="http://en.cppreference.com/w/Talk:cpp/container#We_should_probably_mention_that_it_is_illegal_to_create_containers_with_incomplete_types">http://en.cppreference.com/w/Talk:cpp/container#We_should_probably_mention_that_it_is_illegal_to_create_containers_with_incomplete_types</a>
+</p>
+<h2><span class="editsection">[<a href="/mwiki/index.php?title=Talk:cpp/language/type&amp;action=edit&amp;section=1" title="Edit section: rename 'pointer to data member' to 'pointer to member object'">edit</a>]</span> <span class="mw-headline" id="rename_.27pointer_to_data_member.27_to_.27pointer_to_member_object.27"> rename 'pointer to data member' to 'pointer to member object' </span></h2>
+<p>I propose to rename all occurrences of 'pointer-to-data-member' to 'pointer-to-member-object'<br />
+Reasons: 
+</p>
+<div class="t-li1"><span class="t-li">1)</span> I noticed chaotic usages of BOTH of them in the wiki, while the first one should be considered as a mistake. A data of member reference type is also of data member, but a pointer to such a member is an error.</div>
+<div class="t-li1"><span class="t-li">2)</span> Terms 'pointer to object' 'reference to object' are used, which is inconsistent with 'pointer to data member'. More importantly, 'member of object type' (aka member object) is exactly the target of a so-called 'pointer-to-data-member'</div>
+<div class="t-li1"><span class="t-li">3)</span> In C++ standard, it says 'A non-static data member of non-reference type is a member subobject of a class object', indirectly approves the term 'member object' (or at least 'member subobject')</div>
+<p><br />
+Note 1: I propose it here instead of editing it directly due to its widespread occurrences including:
+</p>
+<ul><li> <a href="/w/cpp/language/pointer#Pointers_to_data_members" title="cpp/language/pointer">cpp/language/pointer#Pointers_to_data_members</a>, Most occurrences are links to here.
+</li><li> <a href="/w/cpp/language/type" title="cpp/language/type">cpp/language/type</a>
+</li><li> <a href="/w/cpp/language/operator_member_access" title="cpp/language/operator member access">cpp/language/operator_member_access</a>
+</li><li> <a href="/w/cpp/utility/functional/bind" title="cpp/utility/functional/bind">cpp/utility/functional/bind</a>
+</li><li> <a href="/w/cpp/utility/functional/invoke" title="cpp/utility/functional/invoke">cpp/utility/functional/invoke</a>
+</li></ul>
+<p>And so on.
+</p><p><br />
+Note 2: I found C++ standard is more likely to use 'data member of non-reference type' (4 occurrences in C++20), but isn't it too long for us to use that in wiki? And more strangely, there ARE 6 'pointer-to-data-member' found in C++20 standard with a 'pointer to data member of non-reference type' and 5 others without any suffix (ironically, 3 of 5 is found in definition of INVOKE). Does it mean 'data member' actually implies 'member object'? further discussion is necessary.
+</p>
+<dl><dd> Problem with "member (sub)object" is that it can refer to base class subobjects. I reckon "pointer to data member object" perhaps? --<a href="/w/User:Ybab321" title="User:Ybab321">Ybab321</a> (<a href="/w/User_talk:Ybab321" title="User talk:Ybab321">talk</a>) 10:41, 24 October 2021 (PDT)
+</dd></dl>
+<dl><dd><dl><dd> I would rather go the other way and purge mentions of "object" from the discussions of pointers to data members, because those beasts do not hold memory addresses and do not point to objects (or anything). Consider <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">struct</span> S <span class="br0">&#123;</span> <span class="kw4">int</span> a<span class="sy4">;</span> <span class="br0">&#125;</span> s<span class="sy4">;</span></span></span>: the expression &amp;s.a is a pointer that points to a member subobject, while the expression &amp;S::a is a pointer-to-data-member, which is just a strongly-typed number zero. --<a href="/w/User:Cubbi" title="User:Cubbi">Cubbi</a> (<a href="/w/User_talk:Cubbi" title="User talk:Cubbi">talk</a>) 08:33, 25 October 2021 (PDT)
+</dd></dl>
+</dd></dl>
+<h2><span class="editsection">[<a href="/mwiki/index.php?title=Talk:cpp/language/type&amp;action=edit&amp;section=2" title="Edit section: Diagram et al">edit</a>]</span> <span class="mw-headline" id="Diagram_et_al"> Diagram et al </span></h2>
+<p>Lets talk. I suppose I should lead by saying that "explain what you're trying to achieve in discussion first" is a reasonable ask and "reminder: I can make whatever edits I want" is an utterly childish response, and one that applies to either direction of a revert. I personally don't have strong feelings about the language side of the site, it's lost its focus on comprehension IMO, but I'll give my stance.
+</p><p>I think the links to the type traits are fine, but I think the page is presented better without them and that's my preference. The diagram is cool, though I'm not much of a diagram guy myself. In response to "Without, the diagram makes no sense", I would suggest changing the diagram labels from "is_xyz" to "xyz", I don't think the "is_" prefix adds any value anyway, and then your diagram makes sense again. --<a href="/w/User:Ybab321" title="User:Ybab321">Ybab321</a> (<a href="/w/User_talk:Ybab321" title="User talk:Ybab321">talk</a>) 03:53, 8 January 2025 (PST)
+</p><p>If links are fine, then let's leave them. If "I just don't like them" is the only reason, it's a pretty weak position when removing someone else's effort.
+</p><p>Changing is_xyz to xyz makes no sense. There is no such entity as an 'object' in the library, however, there is a std::is_object trait.
+</p><p>I honestly really don't understand the opposite position. What is the problem when the section "fundamental" has a link to "std::is_fundamental" trait? Does it violate any rule? Any common sense? <a href="/mwiki/index.php?title=User:Ruslo&amp;action=edit&amp;redlink=1" class="new" title="User:Ruslo (page does not exist)">Ruslo</a> (<a href="/w/User_talk:Ruslo" title="User talk:Ruslo">talk</a>) 04:27, 8 January 2025 (PST)
+</p>
+<dl><dd> Your stance of xyz being non-sense whilst is_xyz being sensible due to the presence of a type trait with that name is absurd, the "is" brings no clarity. Your stance on "I don't like not having the links" is no stronger than "I don't like the links", your other points are also general statements that could equally be made about the revert.
+</dd></dl>
+<dl><dd> It seems to me that you consider the fact that you made an edit to be sufficient justification for these - honestly rather inconsequential - changes. Again, I have no horse in this race, but if there's no argument for the merit of keeping those type trait links, it would seem that you currently hold a minority opinion. --<a href="/w/User:Ybab321" title="User:Ybab321">Ybab321</a> (<a href="/w/User_talk:Ybab321" title="User talk:Ybab321">talk</a>) 06:36, 8 January 2025 (PST)
+</dd></dl>
+<dl><dd> wow, please no, this diagram is worse than no diagram at all: showing relationship between traits instead of types (where's <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span>?), lots of empty visual elements, oversized. Didn't we have Hinnant's C++0x type tree from <a rel="nofollow" class="external free" href="https://howardhinnant.github.io/TypeHiearchy.pdf">https://howardhinnant.github.io/TypeHiearchy.pdf</a> represented at some point, or did I dream it? (It would be 18 years out of date now and could probably be laid out better, but it'd help grasp the relationship between the types visually)  --<a href="/w/User:Cubbi" title="User:Cubbi">Cubbi</a> (<a href="/w/User_talk:Cubbi" title="User talk:Cubbi">talk</a>) 10:59, 8 January 2025 (PST)
+</dd></dl>
+<dl><dd><dl><dd> (@<a href="/mwiki/index.php?title=User:Ruslo&amp;action=edit&amp;redlink=1" class="new" title="User:Ruslo (page does not exist)">Ruslo</a> @<a href="/w/User:Ybab321" title="User:Ybab321">Ybab321</a>) My bad. I copied that reminder from the edit page above the save button as a response to “You are ruining someone else contribution”. What I would like to mean is that everyone making an edit sees the reminder before submitting, and that means an acknowledgement of “I understand that my edits are not permanent”. I did not intend to insult anyone by claiming “I can overwrite any edit you made if I want to”. I am sorry about that.
+</dd></dl>
+</dd></dl>
+<dl><dd><dl><dd> (also @<a href="/w/User:Cubbi" title="User:Cubbi">Cubbi</a>) The main purpose of the initial edit I made is to copy (and rearrange) the definitions of miscellaneous type categories to this page, so that descriptions in cpp/language pages do not need to link to cpp/named req pages for those definitions. I am not strongly against the type trait links, and the latest version is totally OK for me. --<a href="/mwiki/index.php?title=User:Xmcgcg&amp;action=edit&amp;redlink=1" class="new" title="User:Xmcgcg (page does not exist)">Xmcgcg</a> (<a href="/w/User_talk:Xmcgcg" title="User talk:Xmcgcg">talk</a>) 17:59, 8 January 2025 (PST)
+</dd></dl>
+</dd></dl>
+<dl><dd><dl><dd> <i>[this diagram is worse than no diagram at all: showing relationship between traits instead of types (where's int?), lots of empty visual elements, oversized]</i> It's a skeleton showing all parent types and their relationship to the std::is_scalar/std::is_object (one, or both, or none). The current version shows 15 elements, std::is_integer is a parent for 18 types: bool, char, signed char, unsigned char, char8_t, char16_t, char32_t, wchar_t, signed char, short, int, long, long long, unsigned char, unsigned short, unsigned, unsigned long, unsigned long long. Adding them will make it unnecessarily bigger without showing any new information about hierarchy. Details are always available in the text. The diagram is complete in the terms that it shows that std::is_fundamental contains std::is_void, std::is_arithmetic, std::is_null_pointer, and nothing else. As for the empty visual elements, I can experiment a bit. I can even attach a source graphml file if you want to give it a try yourself. <a href="/mwiki/index.php?title=User:Ruslo&amp;action=edit&amp;redlink=1" class="new" title="User:Ruslo (page does not exist)">Ruslo</a> (<a href="/w/User_talk:Ruslo" title="User talk:Ruslo">talk</a>) 06:06, 9 January 2025 (PST)
+</dd></dl>
+</dd></dl>
+<dl><dd><dl><dd> <i>[Didn't we have Hinnant's C++0x type tree ...]</i>
+</dd></dl>
+</dd></dl>
+<dl><dd><dl><dd> I haven't seen this one, I figured out myself that some tree might be helpful while reading the "Type classification" section. The fact that Howard tried to make one just <b>proves</b> the point that having a diagram is a useful thing.
+</dd></dl>
+</dd></dl>
+<dl><dd><dl><dd> If you check the Hinnant's type tree, you can notice the next inconsistencies and sources of confusion:
+</dd></dl>
+</dd></dl>
+<dl><dd><dl><dd> - nullptr_t is a type, there is no std::is_nullptr_t, but there is std::is_null_pointer
+</dd><dd> - void, float, int, etc. are types. However, pointer, scalar, and object are not types but free-form terms from C++ standards, but they all look the same
+</dd><dd> - There is "floating_point" (with an underscore). So it's not a free-form term? At the same time, there are "member object pointer", "member function pointer", etc., without underscore
+</dd></dl>
+</dd></dl>
+<dl><dd><dl><dd> The goal of my edits:
+</dd></dl>
+</dd></dl>
+<dl><dd><dl><dd> - Add a bridge between abstract notions and some code. Every type mentioned in a list has a corresponding trait you can check, like "fundamental types -&gt; std::is_fundamental" or "union types -&gt; std::is_union". It's a homogeneous approach that covers everything. I guess we all agree that officialese filled with abstract terms are much less exciting than having something to try yourself
+</dd><dd> - "is_fundamental" is similar to "std::is_fundamental"; just imagine you put "using std;" somewhere. However, if you use "class", "enum", or "void", but "null_pointer," it's overly confusing
+</dd></dl>
+</dd></dl>
+<dl><dd><dl><dd> The diagram is saved as an SVG file, you can actually click on each element, so if you click on "is_fundamental", it will open the "cpp/types/is_fundamental" page, again, consistency (note: you have to "open image in new tab" in a browser, otherwise it will not work) <a href="/mwiki/index.php?title=User:Ruslo&amp;action=edit&amp;redlink=1" class="new" title="User:Ruslo (page does not exist)">Ruslo</a> (<a href="/w/User_talk:Ruslo" title="User talk:Ruslo">talk</a>) 06:06, 9 January 2025 (PST)
+</dd></dl>
+</dd></dl>
+<p>A smaller version of the diagram has been added. If you don't like anything, please kindly explain what can be improved instead of removing it from the page. <a href="/mwiki/index.php?title=User:Ruslo&amp;action=edit&amp;redlink=1" class="new" title="User:Ruslo (page does not exist)">Ruslo</a> (<a href="/w/User_talk:Ruslo" title="User talk:Ruslo">talk</a>) 06:30, 9 January 2025 (PST)
+</p>
+<dl><dd> (@<a href="/mwiki/index.php?title=User:Ruslo&amp;action=edit&amp;redlink=1" class="new" title="User:Ruslo (page does not exist)">Ruslo</a>) Btw, the template &#123;&#123;<a href="/w/Template:cot" title="Template:cot" class="mw-redirect">cot</a>&#125;&#125; has an optional <i>title</i> parameter. It makes sense to add the string explaining what is under the cut, e.g. ~ <span style="white-space:nowrap;"><code>&#123;&#123;cot&#124;Type traits hierarchy diagram&#125;&#125;</code></span> (or whatever else is appropriate). In addition, the "clicability" of the SVG can also be mentioned in a comment before the SVG. --<a href="/w/User:Space_Mission" title="User:Space Mission">Space Mission</a> (<a href="/w/User_talk:Space_Mission" title="User talk:Space Mission">talk</a>) 06:52, 9 January 2025 (PST)
+</dd></dl>
+<dl><dd><dl><dd> (@<a href="/w/User:Space_Mission" title="User:Space Mission">Space Mission</a>) Updated, thanks for the hints. --<a href="/mwiki/index.php?title=User:Ruslo&amp;action=edit&amp;redlink=1" class="new" title="User:Ruslo (page does not exist)">Ruslo</a> (<a href="/w/User_talk:Ruslo" title="User talk:Ruslo">talk</a>) 07:46, 9 January 2025 (PST)
+</dd></dl>
+</dd></dl>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 144/1000000
+Preprocessor generated node count: 897/1000000
+Post‐expand include size: 502/4194304 bytes
+Template argument size: 152/4194304 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:14670-0!*!0!!*!*!* and timestamp 20250109154639 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=Talk:cpp/language/type&amp;oldid=179411">https://en.cppreference.com/mwiki/index.php?title=Talk:cpp/language/type&amp;oldid=179411</a>"                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div id='catlinks' class='catlinks catlinks-allhidden'></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul>
+<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a href="/w/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-FAQ"><a href="/w/Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="/w/Cppreference:Archives">Offline version</a></li>            </ul>
+        </div>
+                        <div id="cpp-toolbox">
+            <h5><span>Toolbox</span><a href="#"></a></h5>
+            <ul>
+<li id="t-whatlinkshere"><a href="/w/Special:WhatLinksHere/Talk:cpp/language/type" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/w/Special:RecentChangesLinked/Talk:cpp/language/type" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/w/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/mwiki/index.php?title=Talk:cpp/language/type&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/mwiki/index.php?title=Talk:cpp/language/type&amp;oldid=179411" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/mwiki/index.php?title=Talk:cpp/language/type&amp;action=info">Page information</a></li>            </ul>
+        </div>
+                            <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 9 January 2025, at 07:46.</li>
+                            </ul>
+                    <ul id="footer-places">
+                                    <li id="footer-places-privacy"><a href="/w/Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
+                                    <li id="footer-places-about"><a href="/w/Cppreference:About" title="Cppreference:About">About cppreference.com</a></li>
+                                    <li id="footer-places-disclaimer"><a href="/w/Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
+                            </ul>
+                                    <ul id="footer-icons" class="noprint">
+                                    <li id="footer-poweredbyico">
+                                            <a href="//www.mediawiki.org/"><img src="/mwiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>                                            <a href="http://qbnz.com/highlighter/"><img src="//upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" alt="Powered by GeSHi" height="31" width="88" /></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img src="//upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" alt="Hosted by Tiger Technologies" height="31" width="88" /></a>                                        </li>
+                                </ul>
+                        <div style="clear:both">
+            </div>
+            </div>
+        </div>
+        <!-- /footer -->
+        <script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=skins.cppreference2&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
+}</script>
+<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<!-- Served in 0.033 secs. -->
+	</body>
+<!-- Cached 20250109180411 -->
+</html>

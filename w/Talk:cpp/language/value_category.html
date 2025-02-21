@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>Talk:cpp/language/value category - cppreference.com</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.21.2" />
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/mwiki/index.php?title=Talk:cpp/language/value_category&amp;action=edit" />
+<link rel="edit" title="Edit" href="/mwiki/index.php?title=Talk:cpp/language/value_category&amp;action=edit" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/mwiki/opensearch_desc.php" title="cppreference.com (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="https://en.cppreference.com/mwiki/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.ColiruCompiler%2CMathJax%2CStandardRevisions%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
+
+<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"Talk","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":1,"wgPageName":"Talk:cpp/language/value_category","wgTitle":"cpp/language/value category","wgCurRevisionId":151342,"wgArticleId":14454,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Talk:cpp/language/value_category","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+<style type="text/css">/*<![CDATA[*/
+.source-cpp {line-height: normal;}
+.source-cpp li, .source-cpp pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for cpp
+ * CSS class: source-cpp, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.cpp.source-cpp .de1, .cpp.source-cpp .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.cpp.source-cpp  {font-family:monospace;}
+.cpp.source-cpp .imp {font-weight: bold; color: red;}
+.cpp.source-cpp li, .cpp.source-cpp .li1 {font-weight: normal; vertical-align:top;}
+.cpp.source-cpp .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.cpp.source-cpp .li2 {font-weight: bold; vertical-align:top;}
+.cpp.source-cpp .kw1 {color: #0000dd;}
+.cpp.source-cpp .kw2 {color: #0000ff;}
+.cpp.source-cpp .kw3 {color: #0000dd;}
+.cpp.source-cpp .kw4 {color: #0000ff;}
+.cpp.source-cpp .co1 {color: #909090;}
+.cpp.source-cpp .co2 {color: #339900;}
+.cpp.source-cpp .coMULTI {color: #ff0000; font-style: italic;}
+.cpp.source-cpp .es0 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es1 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es2 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es3 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es4 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es5 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .br0 {color: #008000;}
+.cpp.source-cpp .sy0 {color: #008000;}
+.cpp.source-cpp .sy1 {color: #000080;}
+.cpp.source-cpp .sy2 {color: #000040;}
+.cpp.source-cpp .sy3 {color: #000040;}
+.cpp.source-cpp .sy4 {color: #008080;}
+.cpp.source-cpp .st0 {color: #008000;}
+.cpp.source-cpp .nu0 {color: #000080;}
+.cpp.source-cpp .nu6 {color: #000080;}
+.cpp.source-cpp .nu8 {color: #000080;}
+.cpp.source-cpp .nu12 {color: #000080;}
+.cpp.source-cpp .nu16 {color:#000080;}
+.cpp.source-cpp .nu17 {color:#000080;}
+.cpp.source-cpp .nu18 {color:#000080;}
+.cpp.source-cpp .nu19 {color:#000080;}
+.cpp.source-cpp .ln-xtra, .cpp.source-cpp li.ln-xtra, .cpp.source-cpp div.ln-xtra {background-color: #ffc;}
+.cpp.source-cpp span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-1 ns-talk page-Talk_cpp_language_value_category skin-cppreference2 action-view">
+        <!-- header -->
+        <div id="mw-head" class="noprint">
+            <div id="cpp-head-first-base">
+                <div id="cpp-head-first">
+                    <h5><a href="/">
+                        cppreference.com                        </a></h5>
+                    <div id="cpp-head-search">
+                        
+<!-- 0 -->
+<div id="p-search">
+<form action="https://duckduckgo.com/" method="get">
+  <input type="hidden" name="sites" value="cppreference.com">
+  <input type="search" name="q">
+  <input type="submit" value="Search">
+</form>
+</div>
+
+<!-- /0 -->
+                    </div>
+                    <div id="cpp-head-personal">
+                        
+<!-- 0 -->
+<div id="p-personal" class="">
+<span id="pt-createaccount"><a href="/mwiki/index.php?title=Special:UserLogin&amp;returnto=Talk%3Acpp%2Flanguage%2Fvalue+category&amp;type=signup">Create account</a></span>	<div class="menu">
+        <ul>
+<li id="pt-login"><a href="/mwiki/index.php?title=Special:UserLogin&amp;returnto=Talk%3Acpp%2Flanguage%2Fvalue+category" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>        </ul>
+    </div>
+</div>
+
+<!-- /0 -->
+                    </div>
+
+                </div>
+            </div>
+            <div id="cpp-head-second-base">
+                <div id="cpp-head-second">
+                    <div id="cpp-head-tools-left">
+                        
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li  id="ca-nstab-main"><span><a href="/w/cpp/language/value_category"  title="View the content page [c]" accesskey="c">Page</a></span></li>
+					<li  id="ca-talk" class="selected"><span><a href="/w/Talk:cpp/language/value_category"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                    <div id="cpp-head-tools-right">
+                        
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="/w/Talk:cpp/language/value_category" >View</a></span></li>
+					<li id="ca-edit" class=" istalk"><span><a href="/mwiki/index.php?title=Talk:cpp/language/value_category&amp;action=edit"  title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></span></li>
+					<li id="ca-addsection" class="collapsible"><span><a href="/mwiki/index.php?title=Talk:cpp/language/value_category&amp;action=edit&amp;section=new"  title="Start a new section [+]" accesskey="+">+</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="/mwiki/index.php?title=Talk:cpp/language/value_category&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">History</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /header -->
+        <!-- content -->
+<style type="text/css">
+#carbonads {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  left: -170px;
+  max-width: 150px;
+  border-radius: 4px;
+  border: solid 1px hsla(0, 0%, 0%, .1);
+  background-color: hsl(0, 0%, 98%);
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+  Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#carbonads a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#carbonads a:hover {
+  color: inherit;
+}
+
+#carbonads span {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.carbon-img {
+  display: block;
+  margin-bottom: 8px;
+  max-width: 150px;
+  line-height: 1;
+}
+
+.carbon-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px !important;
+  width: 150px;
+  height: auto;
+}
+
+.carbon-text {
+  display: block;
+  padding: 0 1em 8px;
+}
+
+.carbon-poweredby {
+  display: block;
+  padding: 8px 12px;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1;
+}
+html { font-variant-ligatures: no-common-ligatures; }
+</style>
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYITK7M&placement=cppreferencecom" id="_carbonads_js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading">Talk:cpp/language/value category</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    <div id="siteSub">From cppreference.com</div>
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    <div id="contentSub"><span class="subpages">&lt; <a href="/w/Talk:cpp" title="Talk:cpp">Talk:cpp</a>&lrm; | <a href="/w/Talk:cpp/language" title="Talk:cpp/language">language</a></span></div>
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#lvalue"><span class="tocnumber">1</span> <span class="toctext">lvalue</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Category_of_a.m_for_prvalues"><span class="tocnumber">2</span> <span class="toctext">Category of <span><span>a.<span>m</span></span></span> for prvalues</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#lvalue_2"><span class="tocnumber">3</span> <span class="toctext">lvalue</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#lvalue_3"><span class="tocnumber">4</span> <span class="toctext">lvalue</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#rvalue_array_subscription_produces_an_lvalue.2C_not_an_xvalue"><span class="tocnumber">5</span> <span class="toctext">rvalue array subscription produces an lvalue, not an xvalue</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Expressions_can_have_reference_type"><span class="tocnumber">6</span> <span class="toctext">Expressions can have reference type</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Ternary_conditional"><span class="tocnumber">7</span> <span class="toctext">Ternary conditional</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#C.2B.2B17_rewrite"><span class="tocnumber">8</span> <span class="toctext">C++17 rewrite</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#A_diagram"><span class="tocnumber">9</span> <span class="toctext">A diagram</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Temporaries_in_C.2B.2B17"><span class="tocnumber">10</span> <span class="toctext">Temporaries in C++17</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Bit-fields"><span class="tocnumber">11</span> <span class="toctext">Bit-fields</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#How_about_retroactively_applying_the_C.2B.2B11_taxonomy_to_C.2B.2B98_among_the_cppreference.3F"><span class="tocnumber">12</span> <span class="toctext">How about retroactively applying the C++11 taxonomy to C++98 among the cppreference?</span></a></li>
+</ul>
+</td></tr></table>
+<h2><span class="editsection">[<a href="/mwiki/index.php?title=Talk:cpp/language/value_category&amp;action=edit&amp;section=1" title="Edit section: lvalue">edit</a>]</span> <span class="mw-headline" id="lvalue"> lvalue </span></h2>
+<p>I added that any reference to a function is an lvalue.  Someone removed that.  It is true that any reference to a function is an lvalue so that statement covers all cases.  The following box on C++11 is misleading.
+<a href="/mwiki/index.php?title=User:Fraser_R&amp;action=edit&amp;redlink=1" class="new" title="User:Fraser R (page does not exist)">Fraser R</a> (<a href="/mwiki/index.php?title=User_talk:Fraser_R&amp;action=edit&amp;redlink=1" class="new" title="User talk:Fraser R (page does not exist)">talk</a>) 00:37, 4 May 2023 (PDT)
+</p>
+<dl><dd> Hopefully my edit clarifies the lvalue reference to function case --<a href="/w/User:Ybab321" title="User:Ybab321">Ybab321</a> (<a href="/w/User_talk:Ybab321" title="User talk:Ybab321">talk</a>) 04:05, 4 May 2023 (PDT)
+</dd></dl>
+<h2><span class="editsection">[<a href="/mwiki/index.php?title=Talk:cpp/language/value_category&amp;action=edit&amp;section=2" title="Edit section: Category of a.m for prvalues">edit</a>]</span> <span class="mw-headline" id="Category_of_a.m_for_prvalues"> Category of <span class="t-c"><span class="mw-geshi cpp source-cpp">a.<span class="me1">m</span></span></span> for prvalues </span></h2>
+<p>I think that the <span class="t-c"><span class="mw-geshi cpp source-cpp">a.<span class="me1">m</span></span></span> example for prvalues is very misleading in its wording; <span class="t-c"><span class="mw-geshi cpp source-cpp">a.<span class="me1">m</span></span></span> is never a prvalue, since it's named, and is either an lvalue or an xvalue, as noted here:
+</p><p><a rel="nofollow" class="external free" href="http://eel.is/c++draft/expr.ref#4.2">http://eel.is/c++draft/expr.ref#4.2</a>
+</p><p>It makes sense, to me, that the prvalue bit should be removed entirely. The xvalue case of <span class="t-c"><span class="mw-geshi cpp source-cpp">a.<span class="me1">m</span></span></span> is correct in that, if a is an rvalue, m is an xvalue.
+</p><p><a href="/w/Special:Contributions/38.99.42.242" title="Special:Contributions/38.99.42.242">38.99.42.242</a> 17:22, 22 December 2016 (PST)
+</p>
+<dl><dd> That link is to the current C++17 draft, while the part about member of rvalue being an rvalue is from before C++11. It was made confusing by a "since c++17" that snuck in - updated. --<a href="/w/User:Cubbi" title="User:Cubbi">Cubbi</a> (<a href="/w/User_talk:Cubbi" title="User talk:Cubbi">talk</a>) 18:20, 22 December 2016 (PST)
+</dd></dl>
+<p>(<a href="/mwiki/index.php?title=User:Begemot&amp;action=edit&amp;redlink=1" class="new" title="User:Begemot (page does not exist)">Begemot</a> (<a href="/mwiki/index.php?title=User_talk:Begemot&amp;action=edit&amp;redlink=1" class="new" title="User talk:Begemot (page does not exist)">talk</a>) 02:32, 26 August 2015 (PDT))
+</p><p>Hi everyone!
+I think I found mistakes
+</p><p>Hey there, so I've been digging into this to give a seminar on R and L values, and agree that the way it is written now is a bit misleading.  I've seen somewhere this called a "bug," however I was just reading the C++14 standard (<a rel="nofollow" class="external free" href="https://timsong-cpp.github.io/cppwp/n4140/draft.pdf">https://timsong-cpp.github.io/cppwp/n4140/draft.pdf</a>), and on page 87 (101 of the pdf) it states: 
+"An expression is an xvalue if... a class member access expression designating a non-static data member of non-reference type in which
+the object expression is an xvalue."
+I can confirm this is the behavior I get using gcc.  I'm pretty scared to touch the actual reference, since I'm no expert, but this seems to be pretty solid...
+</p>
+<dl><dd> where is the "bug"? Member of xvalue is xvalue. that's what this page says ("a.m, [...] where a is an rvalue"), as does the current standard (<a rel="nofollow" class="external text" href="http://eel.is/c++draft/expr.ref#4.2.sentence-2">#4.2.sentence-2</a>) as did C++14.  --<a href="/w/User:Cubbi" title="User:Cubbi">Cubbi</a> (<a href="/w/User_talk:Cubbi" title="User talk:Cubbi">talk</a>) 06:04, 31 October 2018 (PDT)
+</dd></dl>
+<dl><dd> Let me clarify, I'm not calling it a bug, I've just seen it called that elsewhere.  To be more clear, I've posted a question on stackoverflow: <a rel="nofollow" class="external free" href="https://stackoverflow.com/questions/53160833/should-the-member-access-operator-of-an-rvalue-be-an-xvalue">https://stackoverflow.com/questions/53160833/should-the-member-access-operator-of-an-rvalue-be-an-xvalue</a>.
+</dd></dl>
+<p>This did indeed change in C++14 from C++11, I've edited the main page. I saw this in ISO/IEC 14882:2011 5.2.5p(4.2), and it is also present in <a rel="nofollow" class="external free" href="https://wg21.link/N3337">https://wg21.link/N3337</a> (<a rel="nofollow" class="external free" href="https://timsong-cpp.github.io/cppwp/n3337/expr.ref#4.2">https://timsong-cpp.github.io/cppwp/n3337/expr.ref#4.2</a>): If <span class="t-c"><span class="mw-geshi cpp source-cpp">a</span></span> is a prvalue, <span class="t-c"><span class="mw-geshi cpp source-cpp">a.<span class="me1">m</span></span></span> is a prvalue in C++11. <a href="/w/Special:Contributions/131.111.243.142" title="Special:Contributions/131.111.243.142">131.111.243.142</a> 02:56, 25 February 2022 (PST)
+</p>
+<h2><span class="editsection">[<a href="/mwiki/index.php?title=Talk:cpp/language/value_category&amp;action=edit&amp;section=3" title="Edit section: lvalue">edit</a>]</span> <span class="mw-headline" id="lvalue_2"> lvalue </span></h2>
+<ul><li> "the name of a variable or function in scope, regardless of type, such as <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="http://en.cppreference.com/w/cpp/io/cin"><span class="kw1760">std::<span class="me2">cin</span></span></a></span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="http://en.cppreference.com/w/cpp/io/manip/endl"><span class="kw1795">std::<span class="me2">endl</span></span></a>.</span></span> Even if the variable's type is rvalue reference, the expression consisting of its name is an lvalue expression;"
+</li></ul>
+<p>But if variable's type is rvalue reference, then value can be moved from, this means that it is an xvalue, rather than lvalue. Am i right?
+</p>
+<ul><li> "...member access (except for non-static non-reference members of <b>rvalues</b>, member enumerators, and non-static member functions)."
+</li></ul>
+<p>I think that using <b>rvalues</b> here is wrong, since rvalue means prvalue or xvalue, but member cannot be prvalue, since it always has an identity, so xvalue is more precise.
+</p>
+<ul><li> "...subscript (except on an array <b>rvalue</b>)..."
+</li></ul>
+<p>I can't imagine an rvalue array. I think here means an array of xvalues.
+</p><p><br />
+</p><p>Any thoughts?
+</p>
+<dl><dd> all three are correct as described on this page. Named rvalue references cannot be moved from (look at any move constructor). Member of rvalue is already correctly described as xvalue. Rvalue arrays are described at <a href="/w/cpp/language/array#Array_rvalues" title="cpp/language/array">cpp/language/array#Array_rvalues</a> --<a href="/w/User:Cubbi" title="User:Cubbi">Cubbi</a> (<a href="/w/User_talk:Cubbi" title="User talk:Cubbi">talk</a>) 03:04, 26 August 2015 (PDT)
+</dd></dl>
+<h2><span class="editsection">[<a href="/mwiki/index.php?title=Talk:cpp/language/value_category&amp;action=edit&amp;section=4" title="Edit section: lvalue">edit</a>]</span> <span class="mw-headline" id="lvalue_3"> lvalue </span></h2>
+<p>hi,
+I do not think the description below about lvalue expression is correct:
+</p>
+<pre>  <i><b>a string literal, such as "Hello, world!";</b></i>
+</pre>
+<p>a string literal should be an pvalue. <a href="/mwiki/index.php?title=User:Kreats&amp;action=edit&amp;redlink=1" class="new" title="User:Kreats (page does not exist)">Kreats</a> (<a href="/mwiki/index.php?title=User_talk:Kreats&amp;action=edit&amp;redlink=1" class="new" title="User talk:Kreats (page does not exist)">talk</a>) 01:12, 25 December 2015 (PST)
+</p>
+<dl><dd><a rel="nofollow" class="external text" href="http://eel.is/c++draft/expr.prim#expr.prim.general-1">It is correct as written.</a> <a href="/w/User:T._Canens" title="User:T. Canens">T. Canens</a> (<a href="/w/User_talk:T._Canens" title="User talk:T. Canens">talk</a>) 01:25, 25 December 2015 (PST)
+</dd></dl>
+<h2><span class="editsection">[<a href="/mwiki/index.php?title=Talk:cpp/language/value_category&amp;action=edit&amp;section=5" title="Edit section: rvalue array subscription produces an lvalue, not an xvalue">edit</a>]</span> <span class="mw-headline" id="rvalue_array_subscription_produces_an_lvalue.2C_not_an_xvalue"> rvalue array subscription produces an lvalue, not an xvalue </span></h2>
+<p>Sorry, but I just can't find any way that the following is an xvalue:
+</p>
+<pre>  <i><b>a[n], the built-in subscript expression, where a is an array rvalue;</b></i>
+</pre>
+<p>Take a look at this:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;utility&gt;</span>
+<span class="co2">#include &lt;iostream&gt;</span>
+&#160;
+<span class="kw4">void</span> bind<span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#40;</span><span class="sy3">&amp;</span> arg<span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">3</span><span class="br0">&#93;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <a href="http://en.cppreference.com/w/cpp/io/cout"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> __PRETTY_FUNCTION__ <span class="sy1">&lt;&lt;</span> <a href="http://en.cppreference.com/w/cpp/io/manip/endl"><span class="kw1795">std::<span class="me2">endl</span></span></a><span class="sy4">;</span>
+<span class="br0">&#125;</span>
+&#160;
+<span class="kw4">void</span> bind<span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#40;</span><span class="sy3">&amp;&amp;</span> arg<span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">3</span><span class="br0">&#93;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <a href="http://en.cppreference.com/w/cpp/io/cout"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> __PRETTY_FUNCTION__ <span class="sy1">&lt;&lt;</span> <a href="http://en.cppreference.com/w/cpp/io/manip/endl"><span class="kw1795">std::<span class="me2">endl</span></span></a><span class="sy4">;</span>
+<span class="br0">&#125;</span>
+&#160;
+<span class="kw4">void</span> bind<span class="br0">&#40;</span><span class="kw4">int</span><span class="sy3">&amp;</span> arg<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <a href="http://en.cppreference.com/w/cpp/io/cout"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> __PRETTY_FUNCTION__ <span class="sy1">&lt;&lt;</span> <a href="http://en.cppreference.com/w/cpp/io/manip/endl"><span class="kw1795">std::<span class="me2">endl</span></span></a><span class="sy4">;</span>
+<span class="br0">&#125;</span>
+&#160;
+<span class="kw4">void</span> bind<span class="br0">&#40;</span><span class="kw4">int</span><span class="sy3">&amp;&amp;</span> arg<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <a href="http://en.cppreference.com/w/cpp/io/cout"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> __PRETTY_FUNCTION__ <span class="sy1">&lt;&lt;</span> <a href="http://en.cppreference.com/w/cpp/io/manip/endl"><span class="kw1795">std::<span class="me2">endl</span></span></a><span class="sy4">;</span>
+<span class="br0">&#125;</span>
+&#160;
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span> <span class="kw1">using</span> identity <span class="sy1">=</span> T<span class="sy4">;</span>
+&#160;
+<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="kw4">int</span> array<span class="br0">&#91;</span><span class="nu0">3</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="br0">&#123;</span><span class="nu0">0</span>,<span class="nu0">0</span>,<span class="nu0">0</span><span class="br0">&#125;</span><span class="sy4">;</span>
+    <span class="kw1">using</span> arr <span class="sy1">=</span> <span class="kw4">int</span><span class="br0">&#91;</span><span class="nu0">3</span><span class="br0">&#93;</span><span class="sy4">;</span>
+&#160;
+    <span class="co1">// A prvalue array binds to rvalue reference</span>
+    bind<span class="br0">&#40;</span>identity<span class="sy1">&lt;</span><span class="kw4">int</span><span class="br0">&#91;</span><span class="br0">&#93;</span><span class="sy1">&gt;</span><span class="br0">&#123;</span><span class="nu0">0</span>,<span class="nu0">0</span>,<span class="nu0">0</span><span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&#160;
+    <span class="co1">// A prvalue array binds to rvalue reference</span>
+    bind<span class="br0">&#40;</span>arr<span class="br0">&#123;</span><span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&#160;
+    <span class="co1">// An xvalue array binds to rvalue reference</span>
+    bind<span class="br0">&#40;</span>std<span class="sy4">::</span><span class="me2">move</span><span class="br0">&#40;</span>array<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&#160;
+    <span class="co1">// prvalue array subscription binds to lvalue reference</span>
+    bind<span class="br0">&#40;</span>identity<span class="sy1">&lt;</span><span class="kw4">int</span><span class="br0">&#91;</span><span class="nu0">3</span><span class="br0">&#93;</span><span class="sy1">&gt;</span><span class="br0">&#123;</span><span class="nu0">0</span>,<span class="nu0">0</span>,<span class="nu0">0</span><span class="br0">&#125;</span><span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&#160;
+    <span class="co1">// prvalue array subscription binds to lvalue reference</span>
+    bind<span class="br0">&#40;</span>arr<span class="br0">&#123;</span><span class="br0">&#125;</span><span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&#160;
+    <span class="co1">// xvalue array subscription binds to lvalue reference</span>
+    bind<span class="br0">&#40;</span>std<span class="sy4">::</span><span class="me2">move</span><span class="br0">&#40;</span>array<span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<p>Output:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">void</span> bind<span class="br0">&#40;</span><span class="kw4">int</span> <span class="br0">&#40;</span><span class="sy3">&amp;&amp;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">3</span><span class="br0">&#93;</span><span class="br0">&#41;</span>
+<span class="kw4">void</span> bind<span class="br0">&#40;</span><span class="kw4">int</span> <span class="br0">&#40;</span><span class="sy3">&amp;&amp;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">3</span><span class="br0">&#93;</span><span class="br0">&#41;</span>
+<span class="kw4">void</span> bind<span class="br0">&#40;</span><span class="kw4">int</span> <span class="br0">&#40;</span><span class="sy3">&amp;&amp;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">3</span><span class="br0">&#93;</span><span class="br0">&#41;</span>
+<span class="kw4">void</span> bind<span class="br0">&#40;</span><span class="kw4">int</span> <span class="sy3">&amp;</span><span class="br0">&#41;</span>
+<span class="kw4">void</span> bind<span class="br0">&#40;</span><span class="kw4">int</span> <span class="sy3">&amp;</span><span class="br0">&#41;</span>
+<span class="kw4">void</span> bind<span class="br0">&#40;</span><span class="kw4">int</span> <span class="sy3">&amp;</span><span class="br0">&#41;</span></pre></div></div>
+<p>Subscripting an array xvalue and prvalue both bind to the lvalue reference overload! 
+</p><p>What am I missing? Perhaps my attempts to produce an array prvalue actually have just created xvalues, and xvalue array subscription is an lvalue expression? If so, I am stumped for more ways to create an array prvalue.
+</p><p>I also found no reference in the C++11 standard that states rvalue array subscription is an xvalue expression. Perhaps whoever explains this to me could point me to the paragraph that defines this behaviour.
+</p><p>Thanks&#160;:D <a href="/mwiki/index.php?title=User:Jsj&amp;action=edit&amp;redlink=1" class="new" title="User:Jsj (page does not exist)">Jsj</a> (<a href="/mwiki/index.php?title=User_talk:Jsj&amp;action=edit&amp;redlink=1" class="new" title="User talk:Jsj (page does not exist)">talk</a>) 21:20, 24 February 2016 (PST)
+</p>
+<dl><dd> For clang, there seems to be an open <a rel="nofollow" class="external text" href="https://llvm.org/bugs/show_bug.cgi?id=25357">bug report</a> regarding subscripts in rvalue arrays --<a href="/w/User:Cubbi" title="User:Cubbi">Cubbi</a> (<a href="/w/User_talk:Cubbi" title="User talk:Cubbi">talk</a>) 02:59, 25 February 2016 (PST)
+</dd></dl>
+<h2><span class="editsection">[<a href="/mwiki/index.php?title=Talk:cpp/language/value_category&amp;action=edit&amp;section=6" title="Edit section: Expressions can have reference type">edit</a>]</span> <span class="mw-headline" id="Expressions_can_have_reference_type"> Expressions can have reference type </span></h2>
+<p>The statement "Each expression has some non-reference type" is not true as is. Scott Meyers has a <a rel="nofollow" class="external text" href="http://scottmeyers.blogspot.de/2015/02/expressions-can-have-reference-type.html">blog post dedicated to this</a>.
+<a href="/mwiki/index.php?title=User:Stefan137&amp;action=edit&amp;redlink=1" class="new" title="User:Stefan137 (page does not exist)">Stefan Arnold</a> (<a href="/mwiki/index.php?title=User_talk:Stefan137&amp;action=edit&amp;redlink=1" class="new" title="User talk:Stefan137 (page does not exist)">talk</a>) 09:08, 3 March 2016 (PST)
+</p>
+<dl><dd> He seems to like making C++ more complicated than it is. Expressions with reference type do not exist. If you attempt to form one, that's not what you get. This (and other type adjustments prior to any analysis) might matter if you're writing a C++ parser, but it's unobservable semantically.  --<a href="/w/User:Cubbi" title="User:Cubbi">Cubbi</a> (<a href="/w/User_talk:Cubbi" title="User talk:Cubbi">talk</a>) 10:23, 3 March 2016 (PST)
+<dl><dd> Actually it's not Scott who makes things complicated, but the standard. Indeed, there are some paragraphs in the standard concerning reference-typed expressions (i.e., before type adjustment drops off the reference from the type), so people might get confused when switching between cppreference.com and the standard. But OK, it's probably in the spirit of cppreference.com to ignore such seemingly unnecessary complications! <a href="/mwiki/index.php?title=User:Stefan137&amp;action=edit&amp;redlink=1" class="new" title="User:Stefan137 (page does not exist)">Stefan Arnold</a> (<a href="/mwiki/index.php?title=User_talk:Stefan137&amp;action=edit&amp;redlink=1" class="new" title="User talk:Stefan137 (page does not exist)">talk</a>) 01:39, 4 March 2016 (PST)
+</dd></dl>
+</dd></dl>
+<h2><span class="editsection">[<a href="/mwiki/index.php?title=Talk:cpp/language/value_category&amp;action=edit&amp;section=7" title="Edit section: Ternary conditional">edit</a>]</span> <span class="mw-headline" id="Ternary_conditional"> Ternary conditional </span></h2>
+<p>In all three categories (lvalue, prvalue, xvalue) there is an identical "ternary conditional" bullet that says "<span class="t-c"><span class="mw-geshi cpp source-cpp">a <span class="sy4">?</span> b <span class="sy4">:</span> c</span></span>, the <a href="/w/cpp/language/operator_other#Conditional_operator" title="cpp/language/operator other">ternary conditional</a> expression for some <code>a</code>, <code>b</code>, and <code>c</code>", without actually qualifying the a, b, or c. Does anyone know the technical restrictions applied to them? <a href="/mwiki/index.php?title=User:Wyverald&amp;action=edit&amp;redlink=1" class="new" title="User:Wyverald (page does not exist)">Wyverald</a> (<a href="/mwiki/index.php?title=User_talk:Wyverald&amp;action=edit&amp;redlink=1" class="new" title="User talk:Wyverald (page does not exist)">talk</a>) 19:54, 16 October 2016 (PDT)
+</p>
+<dl><dd>Yes, it's an extremely complicated mess. You can click on the description for that operator for the gory details. <a href="/w/User:T._Canens" title="User:T. Canens">T. Canens</a> (<a href="/w/User_talk:T._Canens" title="User talk:T. Canens">talk</a>) 00:50, 17 October 2016 (PDT)
+</dd></dl>
+<h2><span class="editsection">[<a href="/mwiki/index.php?title=Talk:cpp/language/value_category&amp;action=edit&amp;section=8" title="Edit section: C++17 rewrite">edit</a>]</span> <span class="mw-headline" id="C.2B.2B17_rewrite"> C++17 rewrite </span></h2>
+<p>I think Cubbi's <a rel="nofollow" class="external text" href="http://en.cppreference.com/mwiki/index.php?title=cpp/language/value_category&amp;diff=86513&amp;oldid=86345">rewrite</a> makes this page much harder to understand. While it may be true that "rvalue" no longer maps directly to "moveable", I think the taxonomy as a whole is much more comprehensible when initially presented as Stroustrup's orthogonal axes.
+</p><p>For now I've just added a table to the intro that shows the axes. I think there's room for more improvement by rewording or expanding the intro text, but I didn't want to get too far ahead of myself.
+<a href="/w/User:Guildd" title="User:Guildd">Guildd</a> (<a href="/mwiki/index.php?title=User_talk:Guildd&amp;action=edit&amp;redlink=1" class="new" title="User talk:Guildd (page does not exist)">talk</a>) 13:47, 9 January 2017 (PST)
+</p>
+<dl><dd> I don't think the table that was added demonstrates the axes mentioned in Stroustrup's design (those axes were "has identity" in one dimension and "can be moved" in the other). I loved that classification too, but it no longer applies except to the C++11 History section. --<a href="/w/User:Cubbi" title="User:Cubbi">Cubbi</a> (<a href="/w/User_talk:Cubbi" title="User talk:Cubbi">talk</a>) 20:41, 9 January 2017 (PST)
+</dd></dl>
+<p><br />
+</p>
+<h2><span class="editsection">[<a href="/mwiki/index.php?title=Talk:cpp/language/value_category&amp;action=edit&amp;section=9" title="Edit section: A diagram">edit</a>]</span> <span class="mw-headline" id="A_diagram"> A diagram </span></h2>
+<p>When I first learned about the value categories in C++, a diagram somewhere online helped me a lot to understand them. I thought it would be nice to add something like that to this page and so recreated a similar one here: <a rel="nofollow" class="external free" href="https://gist.github.com/vojtechkral/699fc20e7df671c13d0cd257680aff5b">https://gist.github.com/vojtechkral/699fc20e7df671c13d0cd257680aff5b</a> but I don't seem to have the permission to upload here. Any help? Thanks! <a href="/mwiki/index.php?title=User:Vojtechkral&amp;action=edit&amp;redlink=1" class="new" title="User:Vojtechkral (page does not exist)">Vojtechkral</a> (<a href="/mwiki/index.php?title=User_talk:Vojtechkral&amp;action=edit&amp;redlink=1" class="new" title="User talk:Vojtechkral (page does not exist)">talk</a>) 04:49, 18 December 2017 (PST)
+</p>
+<h2><span class="editsection">[<a href="/mwiki/index.php?title=Talk:cpp/language/value_category&amp;action=edit&amp;section=10" title="Edit section: Temporaries in C++17">edit</a>]</span> <span class="mw-headline" id="Temporaries_in_C.2B.2B17"> Temporaries in C++17 </span></h2>
+<p>The intro says:
+</p>
+<ul><li> a prvalue (“pure” rvalue) is an expression whose evaluation either
+<ul><li> computes the value of the operand of an operator (such prvalue has no result object), or
+</li><li> initializes an object or a bit-field (such prvalue is said to have a result object). All class and array prvalues have a result object even if it is discarded. In certain contexts, temporary materialization occurs to create a temporary as the result object;
+</li></ul>
+</li></ul>
+<p>But later it is said that "any expression that designates a temporary object, after temporary materialization" is an xvalue.
+</p><p>IMHO the intro should be reworked to clarify the differences between pre-C++17 and C++17 standards. Is it even possible, in C++17, to have a prvalue with a result object? If yes, when?
+</p><p>-- <a href="/w/Special:Contributions/147.32.8.170" title="Special:Contributions/147.32.8.170">147.32.8.170</a> 02:03, 10 October 2019 (PDT)
+</p>
+<dl><dd> Since C++17 (I don't really understand the related specification until C++17), a prvalue may <i>have</i> a result object but never <i>designates</i> it. The result object is always designated by a glvalue. --<a href="/w/User:Fruderica" title="User:Fruderica">Fruderica</a> (<a href="/w/User_talk:Fruderica" title="User talk:Fruderica">talk</a>) 03:31, 10 October 2019 (PDT)
+</dd></dl>
+<dl><dd><dl><dd> How do you define <i>having a result object</i> and <i>designating a result object</i>? Can you show an example of a (prvalue) expression which has a result object, but does not designate it? -- <a href="/w/Special:Contributions/147.32.8.170" title="Special:Contributions/147.32.8.170">147.32.8.170</a> 05:34, 10 October 2019 (PDT)
+</dd></dl>
+</dd></dl>
+<dl><dd> Temporary materialization is a conversion from prvalue to xvalue. Maybe "any expression that designates a temporary object, after temporary materialization" under xvalue is a bit ambiguous? --<a href="/mwiki/index.php?title=User:D41D8CD98F&amp;action=edit&amp;redlink=1" class="new" title="User:D41D8CD98F (page does not exist)">D41D8CD98F</a> (<a href="/w/User_talk:D41D8CD98F" title="User talk:D41D8CD98F">talk</a>) 04:05, 10 October 2019 (PDT)
+</dd></dl>
+<dl><dd> re "IMHO the intro should be reworked to clarify the differences between pre-C++17 and C++17" -- pre-C++17 part is in the History section. There were far too many changes through the years to make anything legible that attempts to describe both the past and the present (we tried).
+</dd><dd> re "Can you show an example of a (prvalue) expression which has a result object, but does not designate it?" as the intro currently says, prvalue has a result object when it "initializes an object or a bit-field". <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span> x <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span></span></span> the prvalue <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span> has the result object <span class="t-c"><span class="mw-geshi cpp source-cpp">x</span></span>. The expression <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span> does not designate any object: it has no address. --<a href="/w/User:Cubbi" title="User:Cubbi">Cubbi</a> (<a href="/w/User_talk:Cubbi" title="User talk:Cubbi">talk</a>) 05:43, 10 October 2019 (PDT)
+</dd></dl>
+<dl><dd><dl><dd> re "pre-C++17 part is in the History section" -- in that case I suggest to mark the whole intro as "since C++17". Otherwise it is not easy to realize this, for example I assumed that the intro holds "since C++11". -- <a href="/w/Special:Contributions/147.32.8.170" title="Special:Contributions/147.32.8.170">147.32.8.170</a> 06:05, 10 October 2019 (PDT)
+</dd></dl>
+</dd></dl>
+<h2><span class="editsection">[<a href="/mwiki/index.php?title=Talk:cpp/language/value_category&amp;action=edit&amp;section=11" title="Edit section: Bit-fields">edit</a>]</span> <span class="mw-headline" id="Bit-fields"> Bit-fields </span></h2>
+<p>Contrary to this page, bit-fields are not mentioned in the value categories specified in the standard (<a rel="nofollow" class="external free" href="https://eel.is/c++draft/expr.prop#basic.lval-1">https://eel.is/c++draft/expr.prop#basic.lval-1</a>).
+</p><p>Compare
+</p>
+<ul><li> A <i>glvalue</i> is an expression whose evaluation determines the identity of an object or function.
+</li><li> A <i>prvalue</i> is an expression whose evaluation initializes an object or computes the value of an operand of an operator, as specified by the context in which it appears, or an expression that has type <i>cv</i> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span></span>.
+</li><li> An <i>xvalue</i> is a glvalue that denotes an object whose resources can be reused (usually because it is near the end of its lifetime).
+</li></ul>
+<p>to
+</p>
+<ul><li> a glvalue (“generalized” lvalue) is an expression whose evaluation determines the identity of an object, bit-field, or function;
+</li><li> a prvalue (“pure” rvalue) is an expression whose evaluation either computes the value of an operand of a built-in operator or has type void (such prvalue has no result object), or initializes an object or a bit-field (such prvalue is said to have a result object).
+</li><li> an xvalue (an “eXpiring” value) is a glvalue that denotes an object or bit-field whose resources can be reused;
+</li></ul>
+<p>Who is right?
+</p><p><a href="/mwiki/index.php?title=User:Maggyero&amp;action=edit&amp;redlink=1" class="new" title="User:Maggyero (page does not exist)">Maggyero</a> (<a href="/w/User_talk:Maggyero" title="User talk:Maggyero">talk</a>) 03:33, 8 September 2021 (PDT)
+</p>
+<dl><dd> "object, bit-field, or function" is correct although incomplete; there are other entities lvalues can refer to that aren't objects or functions (or bit-fields). However, this is just the intro, and needs to bring up only the core points that distinguish the categories: since we have a separate section for bit fields under (<a href="/w/cpp/language/value_category#Special_categories" title="cpp/language/value category">cpp/language/value_category#Special_categories</a>), I wouldn't mind shortening that to just "object or function".  --<a href="/w/User:Cubbi" title="User:Cubbi">Cubbi</a> (<a href="/w/User_talk:Cubbi" title="User talk:Cubbi">talk</a>) 07:29, 8 September 2021 (PDT)
+</dd></dl>
+<dl><dd><dl><dd> Alright, I thought that the standard was exhaustive i.e. that value categories only applied to expressions denoting or computing objects and functions. If the standard itself is incomplete, I agree that we should not try to complete it here.
+</dd><dd> <a href="/mwiki/index.php?title=User:Maggyero&amp;action=edit&amp;redlink=1" class="new" title="User:Maggyero (page does not exist)">Maggyero</a> (<a href="/w/User_talk:Maggyero" title="User talk:Maggyero">talk</a>) 11:12, 8 September 2021 (PDT)
+</dd></dl>
+</dd></dl>
+<h2><span class="editsection">[<a href="/mwiki/index.php?title=Talk:cpp/language/value_category&amp;action=edit&amp;section=12" title="Edit section: How about retroactively applying the C++11 taxonomy to C++98 among the cppreference?">edit</a>]</span> <span class="mw-headline" id="How_about_retroactively_applying_the_C.2B.2B11_taxonomy_to_C.2B.2B98_among_the_cppreference.3F"> How about retroactively applying the C++11 taxonomy to C++98 among the cppreference? </span></h2>
+<p>I suppose that the C++17 change (<a rel="nofollow" class="external text" href="https://wg21.link/P0135R1">P0135R1</a>) actually deserves rev-boxes as it introduced some behavior changes, but not the C++11 taxonomy change (<a rel="nofollow" class="external text" href="https://wg21.link/N3055">N3055</a>). --<a href="/w/User:Fruderica" title="User:Fruderica">Fruderica</a> (<a href="/w/User_talk:Fruderica" title="User talk:Fruderica">talk</a>) 00:14, 30 June 2022 (PDT)
+</p>
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 481/1000000
+Preprocessor generated node count: 843/1000000
+Post‐expand include size: 2216/4194304 bytes
+Template argument size: 1254/4194304 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:14454-0!*!0!!en!*!* and timestamp 20240517204115 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=Talk:cpp/language/value_category&amp;oldid=151342">https://en.cppreference.com/mwiki/index.php?title=Talk:cpp/language/value_category&amp;oldid=151342</a>"                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div id='catlinks' class='catlinks catlinks-allhidden'></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul>
+<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a href="/w/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-FAQ"><a href="/w/Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="/w/Cppreference:Archives">Offline version</a></li>            </ul>
+        </div>
+                        <div id="cpp-toolbox">
+            <h5><span>Toolbox</span><a href="#"></a></h5>
+            <ul>
+<li id="t-whatlinkshere"><a href="/w/Special:WhatLinksHere/Talk:cpp/language/value_category" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/w/Special:RecentChangesLinked/Talk:cpp/language/value_category" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/w/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/mwiki/index.php?title=Talk:cpp/language/value_category&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/mwiki/index.php?title=Talk:cpp/language/value_category&amp;oldid=151342" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/mwiki/index.php?title=Talk:cpp/language/value_category&amp;action=info">Page information</a></li>            </ul>
+        </div>
+                            <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 4 May 2023, at 04:05.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 8,572 times.</li>
+                            </ul>
+                    <ul id="footer-places">
+                                    <li id="footer-places-privacy"><a href="/w/Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
+                                    <li id="footer-places-about"><a href="/w/Cppreference:About" title="Cppreference:About">About cppreference.com</a></li>
+                                    <li id="footer-places-disclaimer"><a href="/w/Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
+                            </ul>
+                                    <ul id="footer-icons" class="noprint">
+                                    <li id="footer-poweredbyico">
+                                            <a href="//www.mediawiki.org/"><img src="/mwiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>                                            <a href="http://qbnz.com/highlighter/"><img src="//upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" alt="Powered by GeSHi" height="31" width="88" /></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img src="//upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" alt="Hosted by Tiger Technologies" height="31" width="88" /></a>                                        </li>
+                                </ul>
+                        <div style="clear:both">
+            </div>
+            </div>
+        </div>
+        <!-- /footer -->
+        <script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=skins.cppreference2&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
+}</script>
+<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<!-- Served in 0.032 secs. -->
+	</body>
+<!-- Cached 20240518024857 -->
+</html>

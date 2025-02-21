@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>User:Space Mission - cppreference.com</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.21.2" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/mwiki/opensearch_desc.php" title="cppreference.com (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="https://en.cppreference.com/mwiki/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.ColiruCompiler%2CMathJax%2CStandardRevisions%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
+
+<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"User","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":2,"wgPageName":"User:Space_Mission","wgTitle":"Space Mission","wgCurRevisionId":178873,"wgArticleId":19975,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"User:Space_Mission","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+<style type="text/css">/*<![CDATA[*/
+.source-cpp {line-height: normal;}
+.source-cpp li, .source-cpp pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for cpp
+ * CSS class: source-cpp, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.cpp.source-cpp .de1, .cpp.source-cpp .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.cpp.source-cpp  {font-family:monospace;}
+.cpp.source-cpp .imp {font-weight: bold; color: red;}
+.cpp.source-cpp li, .cpp.source-cpp .li1 {font-weight: normal; vertical-align:top;}
+.cpp.source-cpp .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.cpp.source-cpp .li2 {font-weight: bold; vertical-align:top;}
+.cpp.source-cpp .kw1 {color: #0000dd;}
+.cpp.source-cpp .kw2 {color: #0000ff;}
+.cpp.source-cpp .kw3 {color: #0000dd;}
+.cpp.source-cpp .kw4 {color: #0000ff;}
+.cpp.source-cpp .co1 {color: #909090;}
+.cpp.source-cpp .co2 {color: #339900;}
+.cpp.source-cpp .coMULTI {color: #ff0000; font-style: italic;}
+.cpp.source-cpp .es0 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es1 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es2 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es3 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es4 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es5 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .br0 {color: #008000;}
+.cpp.source-cpp .sy0 {color: #008000;}
+.cpp.source-cpp .sy1 {color: #000080;}
+.cpp.source-cpp .sy2 {color: #000040;}
+.cpp.source-cpp .sy3 {color: #000040;}
+.cpp.source-cpp .sy4 {color: #008080;}
+.cpp.source-cpp .st0 {color: #008000;}
+.cpp.source-cpp .nu0 {color: #000080;}
+.cpp.source-cpp .nu6 {color: #000080;}
+.cpp.source-cpp .nu8 {color: #000080;}
+.cpp.source-cpp .nu12 {color: #000080;}
+.cpp.source-cpp .nu16 {color:#000080;}
+.cpp.source-cpp .nu17 {color:#000080;}
+.cpp.source-cpp .nu18 {color:#000080;}
+.cpp.source-cpp .nu19 {color:#000080;}
+.cpp.source-cpp .ln-xtra, .cpp.source-cpp li.ln-xtra, .cpp.source-cpp div.ln-xtra {background-color: #ffc;}
+.cpp.source-cpp span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-2 ns-subject page-User_Space_Mission skin-cppreference2 action-view">
+        <!-- header -->
+        <div id="mw-head" class="noprint">
+            <div id="cpp-head-first-base">
+                <div id="cpp-head-first">
+                    <h5><a href="/">
+                        cppreference.com                        </a></h5>
+                    <div id="cpp-head-search">
+                        
+<!-- 0 -->
+<div id="p-search">
+<form action="https://duckduckgo.com/" method="get">
+  <input type="hidden" name="sites" value="cppreference.com">
+  <input type="search" name="q">
+  <input type="submit" value="Search">
+</form>
+</div>
+
+<!-- /0 -->
+                    </div>
+                    <div id="cpp-head-personal">
+                        
+<!-- 0 -->
+<div id="p-personal" class="">
+<span id="pt-createaccount"><a href="/mwiki/index.php?title=Special:UserLogin&amp;returnto=User%3ASpace+Mission&amp;type=signup">Create account</a></span>	<div class="menu">
+        <ul>
+<li id="pt-login"><a href="/mwiki/index.php?title=Special:UserLogin&amp;returnto=User%3ASpace+Mission" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>        </ul>
+    </div>
+</div>
+
+<!-- /0 -->
+                    </div>
+
+                </div>
+            </div>
+            <div id="cpp-head-second-base">
+                <div id="cpp-head-second">
+                    <div id="cpp-head-tools-left">
+                        
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li  id="ca-nstab-user" class="selected"><span><a href="/w/User:Space_Mission"  title="View the user page [c]" accesskey="c">User page</a></span></li>
+					<li  id="ca-talk"><span><a href="/w/User_talk:Space_Mission"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                    <div id="cpp-head-tools-right">
+                        
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="/w/User:Space_Mission" >View</a></span></li>
+					<li id="ca-viewsource"><span><a href="/mwiki/index.php?title=User:Space_Mission&amp;action=edit"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="/mwiki/index.php?title=User:Space_Mission&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">History</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /header -->
+        <!-- content -->
+<style type="text/css">
+#carbonads {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  left: -170px;
+  max-width: 150px;
+  border-radius: 4px;
+  border: solid 1px hsla(0, 0%, 0%, .1);
+  background-color: hsl(0, 0%, 98%);
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+  Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#carbonads a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#carbonads a:hover {
+  color: inherit;
+}
+
+#carbonads span {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.carbon-img {
+  display: block;
+  margin-bottom: 8px;
+  max-width: 150px;
+  line-height: 1;
+}
+
+.carbon-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px !important;
+  width: 150px;
+  height: auto;
+}
+
+.carbon-text {
+  display: block;
+  padding: 0 1em 8px;
+}
+
+.carbon-poweredby {
+  display: block;
+  padding: 8px 12px;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1;
+}
+html { font-variant-ligatures: no-common-ligatures; }
+</style>
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYITK7M&placement=cppreferencecom" id="_carbonads_js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading">User:Space Mission</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    <div id="siteSub">From cppreference.com</div>
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    <div id="contentSub"></div>
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Today_is_2025.2F02.2F15_yesterday.27s_tomorrow."><span class="tocnumber">1</span> <span class="toctext">Today is 2025/02/15 yesterday's tomorrow.</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Update_routinely_.28A_reminder.29:"><span class="tocnumber">1.1</span> <span class="toctext">Update routinely (A reminder):</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#TODO"><span class="tocnumber">1.2</span> <span class="toctext">TODO</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Links_useful_for_editing"><span class="tocnumber">2</span> <span class="toctext">Links useful for editing</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#A_note_on_syntax_highlight"><span class="tocnumber">3</span> <span class="toctext">A note on syntax highlight</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Some_of_my_examples"><span class="tocnumber">4</span> <span class="toctext">Some of my examples</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Utilities"><span class="tocnumber">5</span> <span class="toctext">Utilities</span></a></li>
+</ul>
+</td></tr></table>
+<h4> <span class="mw-headline" id="Today_is_2025.2F02.2F15_yesterday.27s_tomorrow."> Today is 2025/02/15 yesterday's tomorrow. </span></h4>
+<h5> <span class="mw-headline" id="Update_routinely_.28A_reminder.29:"> Update routinely (A reminder): </span></h5>
+<p>(check/fill/synchronize the following feature-test-macro pages)
+</p>
+<ol><li> <a href="/w/cpp/feature_test#Library_features" title="cpp/feature test">cpp/feature test#Library features</a>
+</li><li> <a href="/w/cpp/feature_test#Example" title="cpp/feature test">cpp/feature test#Example</a>
+</li><li> <a href="/w/cpp/utility/feature_test" title="cpp/utility/feature test">cpp/utility/feature test</a>
+</li><li> <a href="/w/cpp/symbol_index/macro" title="cpp/symbol index/macro">cpp/symbol index/macro</a>
+</li><li> <a href="/w/cpp/compiler_support/23" title="cpp/compiler support/23">cpp/compiler support/23</a>
+</li></ol>
+<h5> <span class="mw-headline" id="TODO"> TODO </span></h5>
+<ul><li> add new range adaptors pages...
+</li><li> gather new names (C++17/20/23) for GeSHi highlighter/links generator
+</li></ul>
+<h4> <span class="mw-headline" id="Links_useful_for_editing"> Links useful for editing </span></h4>
+<ul><li> <a rel="nofollow" class="external text" href="https://meta.wikimedia.org/wiki/Help:Variable">WikiMedia: Variables</a>
+</li><li> <a rel="nofollow" class="external text" href="https://www.mediawiki.org/wiki/Help:Extension:ParserFunctions">WikiMedia: Parser Functions</a>
+</li><li> <a rel="nofollow" class="external text" href="https://meta.wikimedia.org/wiki/Help:Advanced_templates">WikiMedia: Advanced templates</a>
+</li><li> <a rel="nofollow" class="external text" href="https://www.mediawiki.org/wiki/Help:Magic_words">WikiMedia: Enchantment</a>
+</li><li> <a rel="nofollow" class="external text" href="https://www.mediawiki.org/wiki/Extension:SyntaxHighlight">WikiMedia: Syntax Highlight</a>
+</li><li> <a rel="nofollow" class="external text" href="https://www.w3.org/wiki/Common_HTML_entities_used_for_typography">Common HTML entities</a>
+</li><li> Unicode symbols
+</li></ul>
+<h4> <span class="mw-headline" id="A_note_on_syntax_highlight">A note on syntax highlight</span></h4>
+<p>cppreference uses <i>GeSHi</i> syntax highlighter, the currently used version of which does not recognize most of new (C++17/20/23) keywords. Nonetheless, there is a possibility to make them highlighted (in the source-blocks) by editing the 'on-server' file that is actually a copy of the <a rel="nofollow" class="external text" href="https://raw.githubusercontent.com/GeSHi/geshi-1.0/master/src/geshi/cpp.php">geshi/cpp.php</a>. The new keywords (e.g. <span class="mw-geshi cpp source-cpp">char8_t</span>, <span class="mw-geshi cpp source-cpp">consteval</span>, etc.) should be added into <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">'KEYWORDS'</span> <span class="sy1">=&gt;</span> array</span></span> of that file.
+</p>
+<h4> <span class="mw-headline" id="Some_of_my_examples">Some of my examples</span></h4>
+<div style="margin-left:0px">
+<table class="mw-collapsible mw-collapsed" style="background: transparent; text-align: left; border: 1px solid silver; margin: 0.2em auto auto; width:100%; clear: both; padding: 1px;">
+
+<tr>
+<th style="background: #CFC; font-size:87%; padding:0.2em 0.3em; text-align:center;"><span style="font-size:115%"></span>
+</th></tr>
+<tr>
+<td style="border: solid 1px silver; padding: 8px; background: white;">
+<ul><li> <a href="/w/cpp/string/basic_string_view#Example" title="cpp/string/basic string view">Optical illusion</a>
+</li><li> <a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=cpp/chrono/year_month_weekday_last&amp;oldid=122229#Example">Month calendar</a>
+</li><li> <a href="/w/cpp/numeric/random/fisher_f_distribution#Example" title="cpp/numeric/random/fisher f distribution">Fisher distribution in ASCII</a>
+</li><li> ...todo... *
+</li></ul>
+</td></tr></table></div>
+<h4> <span class="mw-headline" id="Utilities">Utilities</span></h4>
+<p><small>Not to be lost:</small>
+</p>
+<ul><li> <a href="/w/Talk:cpp/symbol_index/macro#FTM_finder" title="Talk:cpp/symbol index/macro">FTM difference finder</a> (draft vs <a href="/w/cpp/symbol_index/macro" title="cpp/symbol index/macro">Symbol Index</a>).
+</li><li> <a href="/w/cpp/feature_test#Compiler_Features_Dump" title="cpp/feature test">Compiler Features Dump</a>.
+</li><li> FTM table generator for <a href="/w/cpp/utility/feature_test" title="cpp/utility/feature test">cpp/utility/feature test</a>:
+</li></ul>
+<div style="margin-left:0px">
+<table class="mw-collapsible mw-collapsed" style="background: transparent; text-align: left; border: 1px solid silver; margin: 0.2em auto auto; width:100%; clear: both; padding: 1px;">
+
+<tr>
+<th style="background: #CFC; font-size:87%; padding:0.2em 0.3em; text-align:center;"><span style="font-size:115%">v1. Feature-test macros extractor / table generator (<a href="/w/cpp/utility/feature_test" title="cpp/utility/feature test">cpp/utility/feature test</a>); Source: <a rel="nofollow" class="external text" href="https://eel.is/c++draft">online C++ draft (HTML)</a></span>
+</th></tr>
+<tr>
+<td style="border: solid 1px silver; padding: 8px; background: white;">
+<pre>
+//!
+//! \abstract This program downloads the &quot;Language support library macros&quot;
+//! [page](https://eel.is/c++draft/version.syn), parses it, and then generates the
+//! wiki-source for the [page](https://en.cppreference.com/w/cpp/utility/feature_test).
+//!
+//! \usage: just compile &amp; run, the wiki-page will be sent to terminal.
+//!
+//! \dependencies: the `curl` program, C++20.
+//!
+//! \author: (c) 2021. Space Mission. For cppreference.com internal usage.
+//! \license: [CC-BY-SA](https://en.cppreference.com/w/Cppreference:Copyright/CC-BY-SA).
+//!
+//! \news:
+//! 2021-06-12&#160;: initial release (used an array that contains the plain text copied from
+//!           &#160;: the eel page).
+//! 2021-12-19&#160;: added options and means to generate the whole wiki-page instead of only
+//!           &#160;: the wiki-table. Note that this requires updates if the original
+//!           &#160;: [page](cppreference.com/w/cpp/utility/feature_test) was changed.
+//! 2021-12-20&#160;: (optimizations) e.g. the output is generated w/o a temporary vector.
+//! 2021-12-21&#160;: added &quot;curl&quot; downloading of the source html file from
+//!           &#160;: [the site](https://eel.is/c++draft/version.syn).
+//! 2021-12-23&#160;: added data extractor from the html using std::regex library.
+//! 2021-12-27&#160;: added more test.
+//! 2022-01-29&#160;: fixed SourceDownloader::load() always returned `false`; nonetheless,
+//!           &#160;: everything worked due to try_local_file_if_download_failed == true.
+//! 2023-02-27&#160;: removed page's (volatile) header/footer generating code; left only the
+//!           &#160;: table generation; placed the macros counter in the table's footer.
+//! 2023-04-05&#160;: added support of macros w/o headers, e.g., __cpp_lib_modules.
+//!
+//! TODO: add &quot;freestanding&quot; support, see P2198R4 (Freestanding Feature-Test Macros)
+
+#include &lt;algorithm&gt;
+#include &lt;cassert&gt;
+#include &lt;cstdlib&gt;
+#include &lt;filesystem&gt;
+#include &lt;fstream&gt;
+#include &lt;iomanip&gt;
+#include &lt;iostream&gt;
+#include &lt;regex&gt;
+#include &lt;sstream&gt;
+#include &lt;stdexcept&gt;
+#include &lt;string&gt;
+#include &lt;string_view&gt;
+
+using namespace std::literals;
+
+/**
+ * @brief      global options
+ */
+struct option {
+    //
+    //! A command to download the source html page. This string will be appended with the
+    //! target file and then executed by std::system( command / tmp-dir / file-name );
+    //!
+    static inline constexpr auto command{
+        &quot;curl https://eel.is/c++draft/version.syn --silent -o &quot;sv};
+    //
+    //! Do not fail if the source html file was not loaded (due to Internet problems) in
+    //! this session, but still exists locally (left from a previous session).
+    //! Useful mostly for debugging.
+    static inline constexpr bool try_local_file_if_download_failed {false};
+    //
+    //! Remove downloaded source html file (only if it was downloaded in this session).
+    static inline constexpr bool remove_downloaded_file_at_exit {false};
+    //
+    //! Print additional info, such as success/failure.
+    static inline constexpr bool verbose {false};
+    //
+    //! Test mode only.
+    static inline constexpr bool enable_tests {false};
+};
+
+//!
+//! \brief A downloader: gets the source file from the Internet.
+//!
+class SourceDownloader final {
+    std::string downloaded_file_name_;
+
+  public:
+    SourceDownloader() = default;
+    SourceDownloader(SourceDownloader const&amp;) = default;
+    SourceDownloader&amp; operator=(SourceDownloader const&amp;) = default;
+    ~SourceDownloader() { cleanup(); }
+
+  public:
+    [[nodiscard]] bool load();
+    [[nodiscard]] const std::string&amp; file_name() const noexcept {
+        return downloaded_file_name_;
+    }
+    void cleanup();
+};
+
+/**
+ * @brief      Loads source html file from the &quot;https://eel.is/c++draft/&quot;.
+ * @return     return true if the file was downloaded successfully.
+ */
+inline bool SourceDownloader::load() {
+    constexpr auto html {&quot;eel_cpp_header_version.html&quot;sv};
+
+    downloaded_file_name_ = std::filesystem::temp_directory_path() / html;
+
+    const std::string command {option::command.data() + downloaded_file_name_};
+
+    if constexpr (option::verbose) {
+        std::cout &lt;&lt; &quot;Downloading with: [&quot; &lt;&lt; command &lt;&lt; &quot;]\n&quot;;
+        std::cout &lt;&lt; &quot;Destination file: &quot; &lt;&lt; downloaded_file_name_ &lt;&lt; '\n';
+    }
+
+    if (const int ret_code {std::system(command.data())}; ret_code&#160;!= 0) {
+        if constexpr (option::verbose) {
+            std::cout &lt;&lt; &quot;Can't download the file: error #&quot; &lt;&lt; ret_code &lt;&lt; '\n';
+            // TODO: maybe decipher the error return code.
+        }
+        return false;
+    }
+    if constexpr (option::verbose)
+        std::cout &lt;&lt; &quot;OK. The file was downloaded successfully.\n&quot;;
+
+    return true;
+}
+
+/**
+ * @brief    Reset file and (conditionally) remove downloaded html source file.
+ */
+inline void SourceDownloader::cleanup() {
+    if constexpr (option::remove_downloaded_file_at_exit) {
+        if (!downloaded_file_name_.empty()) {
+            std::filesystem::remove(downloaded_file_name_);
+            downloaded_file_name_.clear();
+        }
+    }
+}
+
+/**
+ * @brief class FeatureTestTable.
+ *  Extracts data from a given string, that must be a part of
+ *  [table entry](https://eel.is/c++draft/version.syn) html page
+ *  and generates the page [or (conditionally) only the table]:
+ *  [page](https://en.cppreference.com/w/cpp/utility/feature_test)
+ */
+class FeatureTestTable {
+  public:
+    FeatureTestTable() = default;
+
+  public:
+    [[nodiscard]] std::string generate_entry(std::string_view source);
+
+  private:
+    [[nodiscard]] bool parse_line(std::string_view source);
+
+  public:
+    static bool generate();
+
+  public:
+    [[nodiscard]] static bool self_test();
+
+  private:
+    [[nodiscard]] static std::string_view table_head();
+    [[nodiscard]] static std::string table_tail(unsigned);
+
+  private:
+    using string_view_vector = std::vector&lt;std::string_view&gt;;
+
+  private:
+    string_view_vector headers_;  // e.g. {&quot;vector&quot;, &quot;type_traits&quot;}
+    std::string_view macro_;      // e.g. &quot;__cpp_lib_any&quot;
+    std::string_view date_;       // e.g. &quot;201606L&quot;
+};
+
+/**
+ * @brief      Parses the source line and sets internal values for macro_, date_, headers_
+ * @param[in]  source  - The source html line
+ * @exception  std::logic_error - throws if the source html has a wrong format.
+ * @return     true - if line was parsed successfully.
+ */
+inline bool FeatureTestTable::parse_line(std::string_view source) {
+    headers_.clear();
+    macro_ = date_ = &quot;&quot;;
+
+    const char* suffix;
+    std::cmatch m;
+    constexpr std::regex::flag_type flags{std::regex_constants::ECMAScript |
+                                          std::regex_constants::optimize};
+
+    /* Obtain macro (e.g. &quot;__cpp_lib_byte&quot;) and date (e.g. &quot;201603L&quot;)
+     * HTML example:
+    &lt;span class='preprocessordirective'&gt;#define&lt;/span&gt; &lt;span id='lib:__cpp_lib_byte'&gt;...
+    ...&lt;span class='literal'&gt;202011L&lt;/span&gt;...
+     */
+    static const std::regex re_get_macro_and_date{
+        &quot;'lib:(__cpp_lib_[_a-z0-9]{3,50})'.*'literal'&gt;(20[1-4][0-9]{3}L)&quot;,
+        flags
+    };
+    if (!std::regex_search(source.data(), m, re_get_macro_and_date) or m.size()&#160;!= 3)
+        return false;
+    macro_ = std::string_view(m[1].first, m[1].second - m[1].first);
+    date_ = std::string_view(m[2].first, m[2].second - m[2].first);
+    suffix = m.suffix().first;  // contains the tail with at least one header
+
+    if (macro_.length() &lt; &quot;__cpp_lib_xxx&quot;sv.length() or
+        date_.length()&#160;!= (/*a sample:*/ &quot;202002L&quot;sv).length())
+        return false;
+
+    /* Obtain header(s) in the cycle.
+     * HTML example:
+    ...&lt;span id='headerref:&lt;string_view&gt;___'&gt;...
+     */
+    static const std::regex re_find_header{
+        R&quot;regex((?:headerref:&lt;)([_a-z\d]+(?:\.h)?)&gt;)regex&quot;, flags};
+    for (; std::regex_search(suffix, m, re_find_header) and m.size() == 2;
+         suffix = m.suffix().first)  // contains the tail with zero or more headers
+        headers_.emplace_back(m[1].first, m[1].second - m[1].first);
+
+    return true;
+}
+
+/**
+ * @brief      Performs self test and returns.
+ *
+ * @return     `true` if self-test passed.
+ */
+inline bool FeatureTestTable::self_test() {
+    FeatureTestTable tab;
+
+    constexpr auto fake_html =
+    &quot;&lt;span class='preprocessordirective'&gt;#define&lt;/span&gt; &lt;span id='lib:__cpp_lib_byte'&gt;...&quot;
+    &quot;...&lt;span class='literal'&gt;202011L&lt;/span&gt;...&quot;
+    &quot;...&lt;span id='headerref:&lt;string&gt;___'&gt;...&quot;
+    &quot;...&lt;span id='headerref:&lt;string_view&gt;___'&gt;...&quot;sv;
+
+    return tab.parse_line(fake_html) and tab.macro_ == &quot;__cpp_lib_byte&quot; and
+           tab.date_ == &quot;202011L&quot; and tab.headers_.size() == 2 and
+           tab.headers_[0] == &quot;string&quot; and tab.headers_[1] == &quot;string_view&quot;;
+}
+
+/**
+ * @brief   Generates the header of the table.
+ */
+inline std::string_view FeatureTestTable::table_head() {
+    return
+R&quot;--(
+{| class=&quot;wikitable sortable&quot;
+|-
+! Macro name
+! Value
+! Header
+)--&quot;sv;
+}
+
+/**
+ * @brief   Generates the footer of the table.
+ */
+inline std::string FeatureTestTable::table_tail(unsigned entry_count) {
+    return
+    &quot;|-\n&quot;
+    &quot;! colspan=\&quot;3\&quot; | Total number of macros: &quot; + std::to_string(entry_count) + &quot;\n&quot;
+    &quot;|}\n&quot;;
+}
+
+/**
+ * @brief      Generates cppreference table entry.
+ * @param      source - source string to parse.
+ * @return     non-empty table entry string, if success. An empty string otherwise.
+ */
+inline std::string FeatureTestTable::generate_entry(std::string_view source) {
+    if (!parse_line(source))
+        return {};
+
+    /* cppreference table entry sample:
+    |-
+    | {{tt|__cpp_lib_byte}}
+    | 201603L
+    | {{header|atomic}} {{header|filesystem}} ...
+    */
+    std::ostringstream str(&quot;&quot;, std::ios_base::ate);
+    str &lt;&lt; &quot;|-\n&quot;
+           &quot;| {{tt|&quot; &lt;&lt; macro_ &lt;&lt; &quot;}}\n&quot;
+           &quot;| &quot; &lt;&lt; date_ &lt;&lt; &quot;\n&quot;
+           &quot;|&quot;;
+    for (auto const&amp; header&#160;: headers_) {
+        str &lt;&lt; &quot; {{header|&quot; &lt;&lt; header &lt;&lt; &quot;}}&quot;;
+    }
+    return str.str();
+}
+
+// TODO:&#160;? implement input_iterator interface for SourceFileReader:
+// begin(), end() [i.e. sentinel] operator*, and operator++.
+class SourceFileReader {
+public:
+    SourceFileReader(SourceFileReader const&amp;) = delete;
+    SourceFileReader&amp; operator=(SourceFileReader const&amp;) = delete;
+
+    explicit SourceFileReader(std::string_view const file_name);
+
+    [[nodiscard]] bool is_open() const { return ok_; }
+    [[nodiscard]] bool goto_next_line();
+    [[nodiscard]] std::string_view get_line() const { return cur_; }
+
+    operator std::ifstream&amp; () noexcept { return file_; }
+
+  private:
+    std::ifstream file_;
+    std::string cur_;
+    std::string next_;
+    bool ok_{false};
+};
+
+/**
+ * @brief      Opens the source html file.
+ *             Sets the success-flag that should be checked with is_open().
+ * @param      file_name - the source html file name.
+ */
+inline SourceFileReader::SourceFileReader(std::string_view const file_name) {
+
+    const auto file = std::filesystem::path{file_name};
+
+    auto ec = std::error_code{};
+
+    if (!std::filesystem::exists(file, ec)) {
+        std::cerr &lt;&lt; &quot;ERROR: source html file not found: &quot; &lt;&lt; file &lt;&lt; '\n';
+        return;
+    }
+
+    constexpr auto min_file_size = std::uintmax_t{90'000}; // bytes
+    if (auto size = std::uintmax_t{0};
+        (size = std::filesystem::file_size(file, ec)) &lt; min_file_size) {
+        std::cerr &lt;&lt; &quot;ERROR: source html file: &quot; &lt;&lt; file &lt;&lt; '\n'
+                  &lt;&lt; &quot;  is too small, size = &quot; &lt;&lt; size &lt;&lt; &quot; bytes;\n&quot;
+                  &lt;&lt; &quot;  expected size &gt;= &quot; &lt;&lt; min_file_size &lt;&lt; &quot; bytes\n&quot;;
+        return;
+    }
+
+    file_.open(file_name.data());
+    if (not(ok_ = file_.is_open())) {
+        std::cerr &lt;&lt; &quot;ERROR: can't open the source html file: &quot; &lt;&lt; file &lt;&lt; '\n';
+        return;
+    }
+}
+
+/**
+ * @brief      Go to the next line, if it is available.
+ * @exception  may throw std::logic_error in case of wrong file format
+ * @return     true, if next line is available
+ */
+inline bool SourceFileReader::goto_next_line() {
+    if (not ok_)
+        return false;
+
+    constexpr auto significant {&quot;preprocessordirective&quot;sv};
+
+    if (cur_.empty()) { // This is a first run. Find the next valid line.
+        while ((ok_ =&#160;!!std::getline(file_, cur_)) &amp;&amp; cur_.find(significant) == &quot;&quot;sv.npos)
+           &#160;;
+        if (not ok_)
+            throw std::logic_error(&quot;Invalid file format.&quot;);
+    } else {  // This is not the first run. Thus next_ contains the begin.
+        cur_ = std::move(next_);
+    }
+
+    // Find the next begin (or EOF), appending the dependent lines.
+    while ((ok_ =&#160;!!std::getline(file_, next_)) &amp;&amp; next_.find(significant) == &quot;&quot;sv.npos) {
+        cur_ += next_;
+    }
+    return true;
+}
+
+/**
+ * @brief   Generates/prints the table with standard library feature-testing macros.
+ * @note    The format of the output is the wiki-media language. The result is meant to
+ *          be copied to [page](https://en.cppreference.com/w/cpp/utility/feature_test).
+ */
+inline bool FeatureTestTable::generate() {
+    SourceDownloader html;
+    if (not html.load()) {
+        if constexpr (option::try_local_file_if_download_failed) {
+            if constexpr (option::verbose)
+                std::cerr &lt;&lt; &quot;Trying to use local source file: &quot; &lt;&lt; html.file_name()
+                          &lt;&lt; &quot;\n\n&quot;;
+        } else {
+            return false;
+        }
+    }
+
+    auto lines {SourceFileReader{html.file_name()}};
+    if (not lines.is_open()) {
+        return false;
+    }
+
+    std::cout &lt;&lt; FeatureTestTable::table_head();
+
+    auto entry_count {0U};
+
+    try {
+        for (FeatureTestTable table; lines.goto_next_line(); ) {
+            const std::string line{ table.generate_entry(lines.get_line()) };
+            if (not line.empty()) {
+                std::cout &lt;&lt; line &lt;&lt; '\n';
+                ++entry_count;
+            }
+        }
+    } catch (std::logic_error const&amp; ex) {
+        if constexpr (option::verbose)
+            std::cerr &lt;&lt; &quot;ERROR: &quot; &lt;&lt; ex.what() &lt;&lt; '\n';
+        return false;
+    }
+
+    std::cout &lt;&lt; FeatureTestTable::table_tail(entry_count) &lt;&lt; '\n';
+
+    // Some sanity checks:
+    constexpr auto min_entries {179u}; // as per 2023-02-13
+    if (entry_count &lt; min_entries) {
+        std::cerr &lt;&lt; &quot;\nWARNING: Not enough entries! Expected at least &quot; &lt;&lt;
+            min_entries &lt;&lt; '\n';
+    }
+
+    return true;
+}
+
+/**
+ * @brief      Performs self test and returns.
+ *
+ * @return     `true` if self-tests passed.
+ */
+inline bool self_tests() {
+    if constexpr (not option::enable_tests)
+        return true;
+
+    bool ok = FeatureTestTable::self_test();
+
+    if (ok) {
+        if constexpr (option::verbose)
+            std::cerr &lt;&lt; &quot;OK. Tests passed.\n&quot;;
+    } else {
+        std::cerr &lt;&lt; &quot;TESTS FAILED.\n&quot;;
+    }
+
+    return ok;
+}
+
+int main() {
+    return self_tests() and FeatureTestTable::generate()&#160;? EXIT_SUCCESS&#160;: EXIT_FAILURE;
+}
+</pre>
+</td></tr></table></div>
+<div style="margin-left:0px">
+<table class="mw-collapsible mw-collapsed" style="background: transparent; text-align: left; border: 1px solid silver; margin: 0.2em auto auto; width:100%; clear: both; padding: 1px;">
+
+<tr>
+<th style="background: #CFC; font-size:87%; padding:0.2em 0.3em; text-align:center;"><span style="font-size:115%">v2. Feature-test macros extractor / table generator (<a href="/w/cpp/utility/feature_test" title="cpp/utility/feature test">cpp/utility/feature_test</a>); Source: <a rel="nofollow" class="external text" href="https://github.com/cplusplus/draft">github C++ draft (TEX)</a></span>
+</th></tr>
+<tr>
+<td style="border: solid 1px silver; padding: 8px; background: white;">
+<pre>
+//! \abstract This program downloads the &quot;Language support library macros&quot;
+//! [page](https://github.com/cplusplus/draft/raw/main/source/support.tex) (used to be
+//! [page](https://eel.is/c++draft/version.syn)), parses it, and then generates the
+//! MediaWiki table for the [page](https://en.cppreference.com/w/cpp/utility/feature_test).
+//!
+//! \usage: just compile &amp; run, the MediaWiki table will be sent to the terminal.
+//!
+//! \dependencies: [curl](https://en.wikipedia.org/wiki/CURL), C++23.
+//!
+//! \author: (c) 2021-2024. Space Mission. For cppreference.com internal usage.
+//! \license: [CC-BY-SA](https://en.cppreference.com/w/Cppreference:Copyright/CC-BY-SA).
+//!
+//! \news:
+//! 2021-06-12&#160;: initial release (used an array that contains the plain text copied from
+//!           &#160;: the eel page).
+//! 2021-12-19&#160;: added options and means to generate the whole wiki-page instead of only
+//!           &#160;: the wiki-table. Note that this requires updates if the original
+//!           &#160;: [page](cppreference.com/w/cpp/utility/feature_test) was changed.
+//! 2021-12-20&#160;: (optimizations) e.g. the output is generated w/o a temporary vector.
+//! 2021-12-21&#160;: added &quot;curl&quot; downloading of the source html file from
+//!           &#160;: [the site](https://eel.is/c++draft/version.syn).
+//! 2021-12-23&#160;: added data extractor from the html using std::regex library.
+//! 2021-12-27&#160;: added more test.
+//! 2022-01-29&#160;: fixed SourceDownloader::load() always returned `false`; nonetheless,
+//!           &#160;: everything worked due to try_local_file_if_download_failed == true.
+//! 2023-02-27&#160;: removed page's (volatile) header/footer generating code; left only the
+//!           &#160;: table generation; placed the macros counter in the table's footer.
+//! 2023-04-05&#160;: added support of macros w/o headers, e.g., __cpp_lib_modules.
+//! 2024-07-21&#160;: source switching: the source site now is github C++draft repo; the file
+//!           &#160;: format to parse is &quot;tex&quot;; added &quot;freestanding&quot; support.
+//! 2024-07-22&#160;: table style: added 4th (&quot;freestanding&quot;) column; added FTM links.
+//! 2024-12-30&#160;: table style: (minor) the header uses multi-line column description style.
+
+#include &lt;algorithm&gt;
+#include &lt;cassert&gt;
+#include &lt;cstdlib&gt;
+#include &lt;filesystem&gt;
+#include &lt;fstream&gt;
+#include &lt;iomanip&gt;
+#include &lt;iostream&gt;
+#include &lt;regex&gt;
+#include &lt;sstream&gt;
+#include &lt;stdexcept&gt;
+#include &lt;string&gt;
+#include &lt;string_view&gt;
+
+using namespace std::literals;
+
+/**
+ * @brief   global options
+ */
+struct option {
+    //! Do not fail if the source file was not loaded (due to Internet problems) in
+    //! this session, but still exists locally (left from a previous session).
+    static inline constexpr bool try_local_file_if_download_failed{true};
+
+    //! Remove downloaded source file (only if it was downloaded in this session).
+    static inline constexpr bool remove_downloaded_file_at_exit{false};
+
+    //! Print log and additional info, e.g. success/failure.
+    static inline constexpr bool verbose{false};
+
+    //! Test mode only.
+    static inline constexpr bool enable_self_tests{false};
+};
+
+//!
+//! \brief The source file downloader that gets the source file from the Internet.
+//!
+class SourceDownloader final {
+    std::string file_name_;
+
+  public:
+    SourceDownloader() = default;
+    SourceDownloader(SourceDownloader const&amp;) = default;
+    SourceDownloader&amp; operator=(SourceDownloader const&amp;) = default;
+    ~SourceDownloader();
+
+  public:
+    [[nodiscard]] bool load();
+    [[nodiscard]] const std::string&amp; file_name() const noexcept { return file_name_; }
+};
+
+/**
+ * @brief      Loads source TEX file from the C++-draft github repo.
+ * @return     true, if the file was downloaded successfully.
+ */
+inline bool SourceDownloader::load() {
+    file_name_ = std::filesystem::temp_directory_path() / &quot;cxx_draft__support.tex&quot;;
+
+    const std::string command{
+        &quot;curl -LJ https://github.com/cplusplus/draft/raw/main/source/support.tex &quot;s +
+        (option::verbose&#160;? &quot;-o &quot;s&#160;: &quot;--silent -o &quot;s) + file_name_};
+
+    if constexpr (option::verbose) {
+        std::cout &lt;&lt; &quot;Downloading with: [&quot; &lt;&lt; command &lt;&lt; &quot;]\n&quot;
+                     &quot;Destination file: &quot; &lt;&lt; file_name_ &lt;&lt; '\n';
+    }
+
+    if (const int ret_code{std::system(command.data())}; ret_code) {
+        if constexpr (option::verbose) {
+            std::cout &lt;&lt; &quot;Can't download the file: error #&quot; &lt;&lt; ret_code &lt;&lt; '\n';
+            // TODO: maybe decipher the error return code.
+        }
+        return false;
+    }
+
+    if constexpr (option::verbose) {
+        std::cout &lt;&lt; &quot;OK. The file was downloaded successfully.\n&quot;;
+    }
+
+    return true;
+}
+
+/**
+ * @brief    Conditionally remove downloaded source file.
+ */
+inline SourceDownloader::~SourceDownloader() {
+    if constexpr (option::remove_downloaded_file_at_exit)
+        if (!file_name_.empty())
+            std::filesystem::remove(file_name_);
+}
+
+/**
+ * @brief class FtmTableEntry.
+ *
+ *  Extracts data from a given string, that must be a part of
+ *  [source page](https://github.com/cplusplus/draft/raw/main/source/support.tex)
+ *  tex page; generates the page [or (conditionally) only the table]:
+ *  [target page](https://en.cppreference.com/w/cpp/utility/feature_test)
+ */
+class FtmTableEntry {
+  public:
+    FtmTableEntry() = default;
+
+  public:
+    [[nodiscard]] std::string generate_entry(std::string_view source);
+    void clear();
+
+  private:
+    [[nodiscard]] bool parse_line(std::string_view source);
+
+  public:
+    static bool generate();
+
+  public:
+    [[nodiscard]] static bool self_test();
+
+  private:
+    [[nodiscard]] static std::string_view table_head() noexcept;
+    [[nodiscard]] static std::string table_tail(unsigned);
+
+  private:
+    std::vector&lt;std::string_view&gt; headers_; // e.g. {&quot;vector&quot;, &quot;type_traits&quot;}
+    std::string macro_; // e.g. &quot;__cpp_lib_any&quot;
+    std::string_view date_; // e.g. &quot;201606L&quot;
+    bool free_{}; // true, if &quot;freestanding&quot;
+};
+
+/**
+ * @brief      Parses the source line and sets internal values for:
+ */
+inline void FtmTableEntry::clear() {
+    headers_.clear();
+    macro_.clear();
+    date_ = std::string_view{};
+    free_ = false;
+}
+
+/**
+ * @brief      Parses the source line and sets internal values for:
+ *             macro_, date_, headers_, free_.
+ * @param      source, the TEX source line.
+ * @exception  std::logic_error, if the source line has a wrong format.
+ * @return     true, if line was parsed successfully.
+ */
+inline bool FtmTableEntry::parse_line(std::string_view source) {
+    clear();
+    std::cmatch m;
+    constexpr std::regex::flag_type flags{std::regex_constants::ECMAScript |
+                                          std::regex_constants::optimize};
+
+    // A fake example:
+    // #define @\defnlibxname{cpp_lib_atomic}@ 201911L // freestanding, also in
+    //    \libheader{atomic}, \libheader{memory}
+
+    if (static const std::regex re_ftm_and_date{
+            R&quot;FTM(#define @\\defnlibxname\{(cpp_lib_[_a-z0-9]{3,50})\}@)FTM&quot;
+            R&quot;DATE([ ]+(20[1-4][0-9]{3}L)[ ]+// )DATE&quot;,
+            flags};
+       &#160;!std::regex_search(source.data(), m, re_ftm_and_date) or m.size()&#160;!= 3)
+        return false;
+    macro_ = &quot;__&quot; + std::string(m[1].first, m[1].second - m[1].first);
+    date_ = std::string_view(m[2].first, m[2].second - m[2].first);
+
+    // sanity check:
+    if (macro_.length() &lt; &quot;__cpp_lib_xxx&quot;sv.length() or
+        date_.length()&#160;!= (/*sample:*/&quot;202002L&quot;sv).length())
+        return false;
+
+    source.remove_prefix(m.suffix().first - source.data()); // the tail
+    constexpr auto free{&quot;freestanding&quot;sv};
+    // Extract &quot;freestaning&quot; flag, if any.
+    if (const auto pos{source.substr(0, free.length() + 8).find(free)}; pos&#160;!= &quot;&quot;sv.npos) {
+        source.remove_prefix(pos + free.length());
+        free_ = true;
+    }
+
+    // Obtain header(s) in cycle.
+    // TEX example: ... also in \libheader{atomic}, \libheader{memory} ...
+    static const std::regex re_header{
+        R&quot;RE(\libheader\{([a-z][_a-z\d\.]+)\})RE&quot;, flags};
+    while (std::regex_search(source.data(), m, re_header) and m.size() == 2) {
+        headers_.emplace_back(m[1].first, m[1].second - m[1].first);
+        source.remove_prefix(m.suffix().first - source.data()); // update the tail
+    }
+    return true;
+}
+
+/**
+ * @brief   Performs self test and returns.
+ *
+ * @return  true, if self-test has passed.
+ */
+inline bool FtmTableEntry::self_test() {
+    FtmTableEntry tab;
+    if constexpr (1) {
+        tab.clear();
+        constexpr auto fake_tex =
+            &quot;#define @\\defnlibxname{cpp_lib_atomic_lock}@  &quot;
+            &quot;201907L // also in \\libheader{atomic}&quot;sv;
+        if (!(tab.parse_line(fake_tex) and tab.macro_ == &quot;__cpp_lib_atomic_lock&quot; and
+              tab.date_ == &quot;201907L&quot; and tab.free_ == false and
+              tab.headers_.size() == 1 and tab.headers_[0] == &quot;atomic&quot;)) {
+            std::cerr &lt;&lt; &quot;TESTS #1 FAILED.\n&quot;;
+            return false;
+        }
+    }
+    if constexpr (1) {
+        tab.clear();
+        constexpr auto fake_tex =
+            &quot;#define @\\defnlibxname{cpp_lib_char8_t}@  201907L // freestanding, &quot;
+            &quot;also in \\libheader{atomic}, \\libheader{filesystem},  &quot;
+            &quot;// \\libheader{istream}, \\libheader{limits}&quot;sv;
+        if (!(tab.parse_line(fake_tex) and tab.macro_ == &quot;__cpp_lib_char8_t&quot; and
+              tab.date_ == &quot;201907L&quot; and tab.free_ and
+              tab.headers_.size() == 4 and
+              tab.headers_[0] == &quot;atomic&quot; and tab.headers_[1] == &quot;filesystem&quot; and
+              tab.headers_[2] == &quot;istream&quot; and tab.headers_[3] == &quot;limits&quot;)) {
+            std::cerr &lt;&lt; &quot;TESTS #2 FAILED.\n&quot;;
+            return false;
+        }
+    }
+    if constexpr (option::verbose)
+        std::cerr &lt;&lt; &quot;OK. Tests passed.\n&quot;;
+    return true;
+}
+
+/**
+ * @brief   Generates the header of the table.
+ */
+inline std::string_view FtmTableEntry::table_head() noexcept {
+    return
+R&quot;--(
+{|class=&quot;wikitable sortable&quot; style=&quot;font-size: 100%;&quot;
+|-
+!Macro name
+!Value
+!Header
+!Free-&lt;br&gt;standing
+)--&quot;sv;
+}
+
+/**
+ * @brief   Generates the footer of the table.
+ */
+inline std::string FtmTableEntry::table_tail(unsigned entry_count) {
+    return
+    &quot;|-\n&quot;
+    &quot;!colspan=\&quot;4\&quot;|Total number of macros: &quot; + std::to_string(entry_count) + &quot;\n&quot;
+    &quot;|}\n&quot;;
+}
+
+/**
+ * @brief   Generates cppreference table entry.
+ * @param   source - source string to parse.
+ * @return  non-empty table entry string, if success. An empty string otherwise.
+ */
+inline std::string FtmTableEntry::generate_entry(std::string_view source) {
+    if (!parse_line(source))
+        return {};
+
+    /* cppreference table entry sample:
+    |-
+    |{{ftm link|__cpp_lib_byte}}
+    |201603L
+    |{{header|atomic}} {{header|filesystem}} ...
+    |{{yes}}
+    */
+    std::ostringstream str(&quot;&quot;, std::ios_base::ate);
+    str &lt;&lt; &quot;|-\n&quot;
+           &quot;|{{ftm link|&quot; &lt;&lt; macro_ &lt;&lt; &quot;}}\n&quot;
+           &quot;|{{c|&quot; &lt;&lt; date_ &lt;&lt; &quot;}}\n&quot;
+           &quot;|&quot;;
+    for (int n{}; auto const&amp; header&#160;: headers_)
+        str &lt;&lt; (n++&#160;? &quot; &quot;&#160;: &quot;&quot;) &lt;&lt; &quot;{{header|&quot; &lt;&lt; header &lt;&lt; &quot;}}&quot;;
+    str &lt;&lt; (free_&#160;? &quot;\n|{{yes}}&quot;&#160;: &quot;\n|&quot;);
+    return str.str();
+}
+
+class SourceFileReader {
+public:
+    explicit SourceFileReader(std::string_view const file_name);
+    SourceFileReader(SourceFileReader const&amp;) = delete;
+    SourceFileReader&amp; operator=(SourceFileReader const&amp;) = delete;
+
+    [[nodiscard]] operator std::ifstream&amp; () noexcept { return file_; }
+    [[nodiscard]] std::string_view cur_line() const { return cur_; }
+    [[nodiscard]] bool is_open() const { return ok_; }
+    [[nodiscard]] bool next_line();
+
+  private:
+    std::ifstream file_;
+    std::string cur_;
+    std::string next_;
+    bool ok_{false};
+};
+
+/**
+ * @brief   Opens the source TEX file.
+ *          Sets the success-flag that should be checked with is_open().
+ * @param   file_name - the source TEX file name.
+ */
+inline SourceFileReader::SourceFileReader(std::string_view const file_name) {
+    const auto file = std::filesystem::path{file_name};
+    auto ec = std::error_code{};
+
+    if (!std::filesystem::exists(file, ec)) {
+        std::cerr &lt;&lt; &quot;ERROR: source file not found: &quot; &lt;&lt; file &lt;&lt; '\n';
+        return;
+    }
+
+    constexpr std::uintmax_t min_file_size{200'000}; // bytes
+    if (std::uintmax_t size; (size = std::filesystem::file_size(file, ec)) &lt; min_file_size) {
+        std::cerr &lt;&lt; &quot;ERROR: source file: &quot; &lt;&lt; file &lt;&lt; &quot;\n&quot;
+                     &quot;  is too small, size = &quot; &lt;&lt; size &lt;&lt; &quot; bytes;\n&quot;
+                     &quot;  expected size &gt;= &quot; &lt;&lt; min_file_size &lt;&lt; &quot; bytes\n&quot;;
+        return;
+    }
+
+    if (file_.open(file_name.data()); not(ok_ = file_.is_open())) {
+        std::cerr &lt;&lt; &quot;ERROR: can't open the source file: &quot; &lt;&lt; file &lt;&lt; '\n';
+        return;
+    }
+}
+
+/**
+ * @brief      Obtains the next line, if it is available (may concatinate few lines)
+ * @exception  std::logic_error, in case of wrong TEX file format
+ * @return     true, if next line is available
+ */
+inline bool SourceFileReader::next_line() {
+    if (not ok_)
+        return false;
+
+    constexpr auto intro{&quot;#define &quot;sv};
+    constexpr auto outro{&quot;\\end&quot;sv}; // \end{codeblock}
+
+    if (cur_.empty()) { // This is a first run. Find the first valid line.
+        // Exprected preliminary line are:
+        //
+        // &quot;Future revisions of this document might replace&quot;
+        // &quot;    the values of these macros with greater values.&quot;
+        // &quot;\end{note}&quot;
+        // &quot;&quot;
+        // &quot;\begin{codeblock}&quot;
+        // &quot;#define ...&quot;            &lt;== intro
+        //
+        constexpr auto nearest{&quot;Future revisions of this document&quot;sv};
+        while ((ok_ =&#160;!!std::getline(file_, cur_)) &amp;&amp;&#160;!cur_.starts_with(nearest)) {}
+        while ((ok_ =&#160;!!std::getline(file_, cur_)) &amp;&amp;&#160;!cur_.starts_with(intro)) {}
+        if (not ok_)
+            throw std::logic_error(&quot;Unexpected file format.&quot;);
+    } else {  // This is not the first run. Thus next_ contains the beginning.
+        cur_ = std::move(next_);
+    }
+
+    // Find the next begin (or EOB), appending the dependent lines.
+    while ((ok_ =&#160;!!std::getline(file_, next_)) &amp;&amp;&#160;!next_.starts_with(intro)) {
+        if (next_.starts_with(outro)) {
+            ok_ = false; // End Of Block
+            break;
+        }
+        cur_ += next_;
+    }
+
+    return true;
+}
+
+/**
+ * @brief   Generates/prints the table with standard library feature-testing macros.
+ * @note    The result is a table described in MediaWiki language. The output should be
+ *          copied onto &quot;https://en.cppreference.com/w/cpp/utility/feature_test&quot; page.
+ */
+inline bool FtmTableEntry::generate() {
+    SourceDownloader downloader;
+    if (not downloader.load()) {
+        if constexpr (option::try_local_file_if_download_failed) {
+            if constexpr (option::verbose)
+                std::cerr &lt;&lt; &quot;Trying to use local source file: &quot;
+                          &lt;&lt; downloader.file_name() &lt;&lt; &quot;\n\n&quot;;
+        } else {
+            return false;
+        }
+    }
+
+    auto lines{SourceFileReader{downloader.file_name()}};
+    if (not lines.is_open()) {
+        return false;
+    }
+
+    std::cout &lt;&lt; FtmTableEntry::table_head();
+
+    auto entry_count{0U};
+
+    try {
+        for (FtmTableEntry table; lines.next_line(); ) {
+            const std::string line{ table.generate_entry(lines.cur_line()) };
+            if (not line.empty()) {
+                std::cout &lt;&lt; line &lt;&lt; '\n';
+                ++entry_count;
+            }
+        }
+    } catch (std::logic_error const&amp; ex) {
+        if constexpr (option::verbose)
+            std::cerr &lt;&lt; &quot;ERROR: &quot; &lt;&lt; ex.what() &lt;&lt; '\n';
+        return false;
+    }
+
+    std::cout &lt;&lt; FtmTableEntry::table_tail(entry_count) &lt;&lt; '\n';
+
+    // A sanity check&#160;:)
+    constexpr auto min_entries{233u}; // as per 2024-07
+    if (entry_count &lt; min_entries) {
+        std::cerr &lt;&lt; &quot;\nWARNING: Too few entries! Expected &quot; &lt;&lt; min_entries &lt;&lt; &quot; or more.\n&quot;;
+    }
+
+    return true;
+}
+
+/**
+ * @brief   Performs self test and returns.
+ *
+ * @return  true, if self-tests passed.
+ */
+inline bool self_tests() {
+    if constexpr (not option::enable_self_tests)
+        return true;
+    return FtmTableEntry::self_test();
+
+}
+
+int main() {
+    return self_tests() and FtmTableEntry::generate()&#160;? EXIT_SUCCESS&#160;: EXIT_FAILURE;
+}
+</pre>
+</td></tr></table></div>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 270/1000000
+Preprocessor generated node count: 1371/1000000
+Post‐expand include size: 2057/4194304 bytes
+Template argument size: 370/4194304 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:19975-0!*!0!!en!*!* and timestamp 20250215120723 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=User:Space_Mission&amp;oldid=178873">https://en.cppreference.com/mwiki/index.php?title=User:Space_Mission&amp;oldid=178873</a>"                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div id='catlinks' class='catlinks catlinks-allhidden'></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul>
+<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a href="/w/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-FAQ"><a href="/w/Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="/w/Cppreference:Archives">Offline version</a></li>            </ul>
+        </div>
+                        <div id="cpp-toolbox">
+            <h5><span>Toolbox</span><a href="#"></a></h5>
+            <ul>
+<li id="t-whatlinkshere"><a href="/w/Special:WhatLinksHere/User:Space_Mission" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/w/Special:RecentChangesLinked/User:Space_Mission" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-contributions"><a href="/w/Special:Contributions/Space_Mission" title="A list of contributions of this user">User contributions</a></li><li id="t-log"><a href="/w/Special:Log/Space_Mission">Logs</a></li><li id="t-upload"><a href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/w/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/mwiki/index.php?title=User:Space_Mission&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/mwiki/index.php?title=User:Space_Mission&amp;oldid=178873" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/mwiki/index.php?title=User:Space_Mission&amp;action=info">Page information</a></li>            </ul>
+        </div>
+                            <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 29 December 2024, at 22:54.</li>
+                            </ul>
+                    <ul id="footer-places">
+                                    <li id="footer-places-privacy"><a href="/w/Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
+                                    <li id="footer-places-about"><a href="/w/Cppreference:About" title="Cppreference:About">About cppreference.com</a></li>
+                                    <li id="footer-places-disclaimer"><a href="/w/Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
+                            </ul>
+                                    <ul id="footer-icons" class="noprint">
+                                    <li id="footer-poweredbyico">
+                                            <a href="//www.mediawiki.org/"><img src="/mwiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>                                            <a href="http://qbnz.com/highlighter/"><img src="//upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" alt="Powered by GeSHi" height="31" width="88" /></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img src="//upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" alt="Hosted by Tiger Technologies" height="31" width="88" /></a>                                        </li>
+                                </ul>
+                        <div style="clear:both">
+            </div>
+            </div>
+        </div>
+        <!-- /footer -->
+        <script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=skins.cppreference2&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
+}</script>
+<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<!-- Served in 0.401 secs. -->
+	</body>
+<!-- Cached 20250215120723 -->
+</html>

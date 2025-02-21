@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>C11 - cppreference.com</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.21.2" />
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/mwiki/index.php?title=c/11&amp;action=edit" />
+<link rel="edit" title="Edit" href="/mwiki/index.php?title=c/11&amp;action=edit" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/mwiki/opensearch_desc.php" title="cppreference.com (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="https://en.cppreference.com/mwiki/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.ColiruCompiler%2CMathJax%2CStandardRevisions%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
+
+<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/11","wgTitle":"c/11","wgCurRevisionId":179936,"wgArticleId":20604,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/11","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+<style type="text/css">/*<![CDATA[*/
+.source-c {line-height: normal;}
+.source-c li, .source-c pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for c
+ * CSS class: source-c, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.c.source-c .de1, .c.source-c .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.c.source-c  {font-family:monospace;}
+.c.source-c .imp {font-weight: bold; color: red;}
+.c.source-c li, .c.source-c .li1 {font-weight: normal; vertical-align:top;}
+.c.source-c .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.c.source-c .li2 {font-weight: bold; vertical-align:top;}
+.c.source-c .kw1 {color: #0000dd;}
+.c.source-c .kw2 {color: #0000ff;}
+.c.source-c .kw3 {color: #0000dd;}
+.c.source-c .kw4 {color: #0000ff;}
+.c.source-c .co1 {color: #909090;}
+.c.source-c .co2 {color: #339900;}
+.c.source-c .coMULTI {color: #ff0000; font-style: italic;}
+.c.source-c .es0 {color: #008000; font-weight: bold;}
+.c.source-c .es1 {color: #008000; font-weight: bold;}
+.c.source-c .es2 {color: #008000; font-weight: bold;}
+.c.source-c .es3 {color: #008000; font-weight: bold;}
+.c.source-c .es4 {color: #008000; font-weight: bold;}
+.c.source-c .es5 {color: #008000; font-weight: bold;}
+.c.source-c .br0 {color: #008000;}
+.c.source-c .sy0 {color: #008000;}
+.c.source-c .sy1 {color: #000080;}
+.c.source-c .sy2 {color: #000040;}
+.c.source-c .sy3 {color: #000040;}
+.c.source-c .sy4 {color: #008080;}
+.c.source-c .st0 {color: #008000;}
+.c.source-c .nu0 {color: #000080;}
+.c.source-c .nu6 {color:#000080;}
+.c.source-c .nu8 {color:#000080;}
+.c.source-c .nu12 {color:#000080;}
+.c.source-c .nu16 {color:#000080;}
+.c.source-c .nu17 {color:#000080;}
+.c.source-c .nu18 {color:#000080;}
+.c.source-c .nu19 {color:#000080;}
+.c.source-c .ln-xtra, .c.source-c li.ln-xtra, .c.source-c div.ln-xtra {background-color: #ffc;}
+.c.source-c span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-c_11 skin-cppreference2 action-view cpp-navbar">
+        <!-- header -->
+        <div id="mw-head" class="noprint">
+            <div id="cpp-head-first-base">
+                <div id="cpp-head-first">
+                    <h5><a href="/">
+                        cppreference.com                        </a></h5>
+                    <div id="cpp-head-search">
+                        
+<!-- 0 -->
+<div id="p-search">
+<form action="https://duckduckgo.com/" method="get">
+  <input type="hidden" name="sites" value="cppreference.com">
+  <input type="search" name="q">
+  <input type="submit" value="Search">
+</form>
+</div>
+
+<!-- /0 -->
+                    </div>
+                    <div id="cpp-head-personal">
+                        
+<!-- 0 -->
+<div id="p-personal" class="">
+<span id="pt-createaccount"><a href="/mwiki/index.php?title=Special:UserLogin&amp;returnto=c%2F11&amp;type=signup">Create account</a></span>	<div class="menu">
+        <ul>
+<li id="pt-login"><a href="/mwiki/index.php?title=Special:UserLogin&amp;returnto=c%2F11" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>        </ul>
+    </div>
+</div>
+
+<!-- /0 -->
+                    </div>
+
+                </div>
+            </div>
+            <div id="cpp-head-second-base">
+                <div id="cpp-head-second">
+                    <div id="cpp-head-tools-left">
+                        
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><span><a href="/w/c/11"  title="View the content page [c]" accesskey="c">Page</a></span></li>
+					<li  id="ca-talk" class="new"><span><a href="/mwiki/index.php?title=Talk:c/11&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                    <div id="cpp-head-tools-right">
+                        
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="/w/c/11" >View</a></span></li>
+					<li id="ca-edit"><span><a href="/mwiki/index.php?title=c/11&amp;action=edit"  title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="/mwiki/index.php?title=c/11&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">History</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /header -->
+        <!-- content -->
+<style type="text/css">
+#carbonads {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  left: -170px;
+  max-width: 150px;
+  border-radius: 4px;
+  border: solid 1px hsla(0, 0%, 0%, .1);
+  background-color: hsl(0, 0%, 98%);
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+  Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#carbonads a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#carbonads a:hover {
+  color: inherit;
+}
+
+#carbonads span {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.carbon-img {
+  display: block;
+  margin-bottom: 8px;
+  max-width: 150px;
+  line-height: 1;
+}
+
+.carbon-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px !important;
+  width: 150px;
+  height: auto;
+}
+
+.carbon-text {
+  display: block;
+  padding: 0 1em 8px;
+}
+
+.carbon-poweredby {
+  display: block;
+  padding: 8px 12px;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1;
+}
+html { font-variant-ligatures: no-common-ligatures; }
+</style>
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYITK7M&placement=cppreferencecom" id="_carbonads_js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading">C11</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    <div id="siteSub">From cppreference.com</div>
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    <div id="contentSub"><span class="subpages">&lt; <a href="/w/c" title="c">c</a></span></div>
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="/w/c" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"><a href="/w/c/compiler_support" title="c/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="/w/c/language" title="c/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="/w/c/header" title="c/header">Headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="/w/c/types" title="c/types">Type support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="/w/c/program" title="c/program">Program utilities</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="/w/c/variadic" title="c/variadic">Variadic function support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="/w/c/error" title="c/error">Error handling</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="/w/c/memory" title="c/memory">Dynamic memory management</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="/w/c/string" title="c/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="/w/c/algorithm" title="c/algorithm">Algorithms</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="/w/c/numeric" title="c/numeric">Numerics</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="/w/c/chrono" title="c/chrono">Date and time utilities</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="/w/c/io" title="c/io">Input/output support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="/w/c/locale" title="c/locale">Localization support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="/w/c/thread" title="c/thread">Concurrency support</a> <span class="t-mark-rev t-since-c11">(C11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="/w/c/experimental" title="c/experimental">Technical Specifications</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="/w/c/symbol_index" title="c/symbol index">Symbol index</a></td></tr>
+</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="/w/c/language/history" title="c/language/history"> Versions</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5">C89</td></tr>
+<tr class="t-nv"><td colspan="5"><a href="/w/c/95" title="c/95">C95</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="/w/c/99" title="c/99">C99</a></td></tr>
+<tr class="t-nv"><td colspan="5"><strong class="selflink">C11</strong></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="/w/c/17" title="c/17">C17</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="/w/c/23" title="c/23">C23</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="/w/c/current_status" title="c/current status">Current status</a></td></tr>
+</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/version/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div></div>
+<p><b>ISO/IEC 9899:2011</b>, a.k.a. <b>C11</b>.
+</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Obsolete_features"><span class="tocnumber">1</span> <span class="toctext">Obsolete features</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Removed_features"><span class="tocnumber">1.1</span> <span class="toctext">Removed features</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#New_language_features"><span class="tocnumber">2</span> <span class="toctext">New language features</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Feature_test_macros_for_optional_features"><span class="tocnumber">2.1</span> <span class="toctext">Feature test macros for optional features</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#New_library_features"><span class="tocnumber">3</span> <span class="toctext">New library features</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#New_headers"><span class="tocnumber">3.1</span> <span class="toctext">New headers</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Library_features"><span class="tocnumber">3.2</span> <span class="toctext">Library features</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Defect_reports"><span class="tocnumber">4</span> <span class="toctext">Defect reports</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Compiler_support"><span class="tocnumber">5</span> <span class="toctext">Compiler support</span></a></li>
+</ul>
+</td></tr></table>
+<h2><span class="editsection">[<a href="/mwiki/index.php?title=c/11&amp;action=edit&amp;section=1" title="Edit section: Obsolete features">edit</a>]</span> <span class="mw-headline" id="Obsolete_features">Obsolete features</span></h2>
+<h3><span class="editsection">[<a href="/mwiki/index.php?title=c/11&amp;action=edit&amp;section=2" title="Edit section: Removed features">edit</a>]</span> <span class="mw-headline" id="Removed_features">Removed features</span></h3>
+<ul><li> <span class="t-lc"><a href="/w/c/io/gets" title="c/io/gets">gets()</a></span>
+</li></ul>
+<h2><span class="editsection">[<a href="/mwiki/index.php?title=c/11&amp;action=edit&amp;section=3" title="Edit section: New language features">edit</a>]</span> <span class="mw-headline" id="New_language_features">New language features</span></h2>
+<ul><li> Multithreaded environments
+<ul><li> <a href="/w/c/language/atomic" title="c/language/atomic">Atomic objects</a> (<a href="/w/c/keyword/_Atomic" title="c/keyword/ Atomic"><tt>_Atomic</tt></a>)
+</li><li> <a href="/w/c/language/storage_duration#Storage_duration" title="c/language/storage duration">Thread local storage</a> (<a href="/w/c/keyword/_Thread_local" title="c/keyword/ Thread local"><tt>_Thread_local</tt></a>)
+</li></ul>
+</li><li> Enhanced alignment support
+<ul><li> <a href="/w/c/language/_Alignof" title="c/language/ Alignof">Alignment query</a> (<a href="/w/c/keyword/_Alignof" title="c/keyword/ Alignof"><tt>_Alignof</tt></a>)
+</li><li> <a href="/w/c/language/_Alignas" title="c/language/ Alignas">Alignment strengthening</a> (<a href="/w/c/keyword/_Alignas" title="c/keyword/ Alignas"><tt>_Alignas</tt></a>)
+</li><li> Over-aligned types
+</li></ul>
+</li><li> Unicode support
+<ul><li> <a href="/w/c/language/character_constant" title="c/language/character constant"><code>u</code>/<code>U</code> character constants</a>
+</li><li> <a href="/w/c/language/string_literal" title="c/language/string literal"><code>u8</code>/<code>u</code>/<code>U</code> string literals</a>
+</li></ul>
+</li><li> <a href="/w/c/language/generic" title="c/language/generic">Generic selection expressions</a> (<a href="/w/c/keyword/_Generic" title="c/keyword/ Generic"><tt>_Generic</tt></a>)
+</li><li> <a href="/w/c/language/_Noreturn" title="c/language/ Noreturn">Non-returning functions</a> (<a href="/w/c/keyword/_Noreturn" title="c/keyword/ Noreturn"><tt>_Noreturn</tt></a>)
+</li><li> Anonymous <a href="/w/c/language/struct" title="c/language/struct">struct</a> and <a href="/w/c/language/union" title="c/language/union">union</a> members
+</li><li> Fine-grained <a href="/w/c/language/eval_order" title="c/language/eval order">evaluation order</a>
+</li><li> Extending the lifetime of <a href="/w/c/language/lifetime#Temporary_lifetime" title="c/language/lifetime">temporary objects</a>
+</li><li> <a href="/w/c/language/_Static_assert" title="c/language/ Static assert"><tt>_Static_assert</tt></a>
+</li><li> <a href="/w/c/language/analyzability" title="c/language/analyzability">Analyzability</a>
+</li></ul>
+<h3><span class="editsection">[<a href="/mwiki/index.php?title=c/11&amp;action=edit&amp;section=4" title="Edit section: Feature test macros for optional features">edit</a>]</span> <span class="mw-headline" id="Feature_test_macros_for_optional_features">Feature test macros for optional features</span></h3>
+<ul><li> <a href="/w/c/preprocessor/replace" title="c/preprocessor/replace"><tt>__STDC_ANALYZABLE__</tt></a>
+<ul><li> Indicates analyzability is supported.
+</li></ul>
+</li><li> <a href="/w/c/preprocessor/replace" title="c/preprocessor/replace"><tt>__STDC_LIB_EXT1__</tt></a>
+<ul><li> Indicates bounds checking functions are supported.
+</li></ul>
+</li><li> <a href="/w/c/preprocessor/replace" title="c/preprocessor/replace"><tt>__STDC_NO_ATOMICS__</tt></a>
+<ul><li> Indicates atomic objects and the atomic operation library are not supported.
+</li></ul>
+</li><li> <a href="/w/c/preprocessor/replace" title="c/preprocessor/replace"><tt>__STDC_NO_COMPLEX__</tt></a>
+<ul><li> Indicates complex types and the complex math functions are not supported.
+</li></ul>
+<dl><dd> These features were mandatory in C99.
+</dd></dl>
+</li><li> <a href="/w/c/preprocessor/replace" title="c/preprocessor/replace"><tt>__STDC_NO_THREADS__</tt></a>
+<ul><li> Indicates thread local storage and the thread support library are not supported.
+</li></ul>
+</li><li> <a href="/w/c/preprocessor/replace" title="c/preprocessor/replace"><tt>__STDC_NO_VLA__</tt></a>
+<ul><li> Indicates <a href="/w/c/language/array#Variable-length_arrays" title="c/language/array">variable length arrays and variably modified types</a> are not supported.
+</li></ul>
+<dl><dd> These features were mandatory in C99.
+</dd></dl>
+</li></ul>
+<h2><span class="editsection">[<a href="/mwiki/index.php?title=c/11&amp;action=edit&amp;section=5" title="Edit section: New library features">edit</a>]</span> <span class="mw-headline" id="New_library_features">New library features</span></h2>
+<h3><span class="editsection">[<a href="/mwiki/index.php?title=c/11&amp;action=edit&amp;section=6" title="Edit section: New headers">edit</a>]</span> <span class="mw-headline" id="New_headers">New headers</span></h3>
+<ul><li> <a href="/w/c/header/stdalign" title="c/header/stdalign"><tt>&lt;stdalign.h&gt;</tt></a>
+</li><li> <a href="/w/c/header/stdatomic" title="c/header/stdatomic"><tt>&lt;stdatomic.h&gt;</tt></a>
+</li><li> <a href="/w/c/header/stdnoreturn" title="c/header/stdnoreturn"><tt>&lt;stdnoreturn.h&gt;</tt></a>
+</li><li> <a href="/w/c/header/threads" title="c/header/threads"><tt>&lt;threads.h&gt;</tt></a>
+</li><li> <a href="/w/c/header/uchar" title="c/header/uchar"><tt>&lt;uchar.h&gt;</tt></a>
+</li></ul>
+<h3><span class="editsection">[<a href="/mwiki/index.php?title=c/11&amp;action=edit&amp;section=7" title="Edit section: Library features">edit</a>]</span> <span class="mw-headline" id="Library_features">Library features</span></h3>
+<ul><li> <a href="/w/c/thread" title="c/thread">Concurrency support library</a>
+</li><li> <a href="/w/c/memory/aligned_alloc" title="c/memory/aligned alloc"><tt>aligned_alloc()</tt></a>
+</li><li> UTF-16/32 type aliases
+<ul><li> <a href="/w/c/string/multibyte/char16_t" title="c/string/multibyte/char16 t"><tt>char16_t</tt></a>
+</li><li> <a href="/w/c/string/multibyte/char32_t" title="c/string/multibyte/char32 t"><tt>char32_t</tt></a>
+</li></ul>
+</li><li> UTF-16/32 conversion functions
+<ul><li> <span class="t-lc"><a href="/w/c/string/multibyte/mbrtoc16" title="c/string/multibyte/mbrtoc16">mbrtoc16()</a></span>
+</li><li> <span class="t-lc"><a href="/w/c/string/multibyte/mbrtoc32" title="c/string/multibyte/mbrtoc32">mbrtoc32()</a></span>
+</li><li> <span class="t-lc"><a href="/w/c/string/multibyte/c16rtomb" title="c/string/multibyte/c16rtomb">c16rtomb()</a></span>
+</li><li> <span class="t-lc"><a href="/w/c/string/multibyte/c32rtomb" title="c/string/multibyte/c32rtomb">c32rtomb()</a></span>
+</li></ul>
+</li><li> <span class="t-lc"><a href="/w/c/program/quick_exit" title="c/program/quick exit">quick_exit</a></span>
+</li><li> <span class="t-lc"><a href="/w/c/program/at_quick_exit" title="c/program/at quick exit">at_quick_exit</a></span>
+</li><li> Exclusive modes of <span class="t-lc"><a href="/w/c/io/fopen" title="c/io/fopen">fopen()</a></span> and <span class="t-lc"><a href="/w/c/io/freopen" title="c/io/freopen">freopen()</a></span> (<span class="t-c"><span class="mw-geshi c source-c"><span class="st0">&quot;x&quot;</span></span></span>)
+</li><li> <a href="/w/c/error#Bounds_checking" title="c/error">Bounds checking functions</a>
+</li><li> <a href="/w/c/chrono/timespec" title="c/chrono/timespec"><tt>timespec</tt></a>
+</li><li> <a href="/w/c/chrono/timespec_get" title="c/chrono/timespec get"><tt>timespec_get()</tt></a>
+</li><li> <a href="/w/c/numeric/complex/CMPLX" title="c/numeric/complex/CMPLX"><tt>CMPLX(F|L)?</tt></a>
+</li><li> New numeric limit macros
+<ul><li> <a href="/w/c/types/limits" title="c/types/limits"><tt>(FLT|DBL|LDBL)_DECIMAL_DIG</tt></a>
+</li><li> <a href="/w/c/types/limits" title="c/types/limits"><tt>(FLT|DBL|LDBL)_TRUE_MIN</tt></a>
+</li><li> <a href="/w/c/types/limits" title="c/types/limits"><tt>(FLT|DBL|LDBL)_HAS_SUBNORM</tt></a>
+</li></ul>
+</li><li> Thread local <span class="t-lc"><a href="/w/c/error/errno" title="c/error/errno">errno</a></span>
+</li></ul>
+<h2><span class="editsection">[<a href="/mwiki/index.php?title=c/11&amp;action=edit&amp;section=8" title="Edit section: Defect reports">edit</a>]</span> <span class="mw-headline" id="Defect_reports">Defect reports</span></h2>
+<p><a href="/mwiki/index.php?title=Template:c/language/history/DR11&amp;action=edit&amp;redlink=1" class="new" title="Template:c/language/history/DR11 (page does not exist)">Template:c/language/history/DR11</a>
+</p>
+<h2><span class="editsection">[<a href="/mwiki/index.php?title=c/11&amp;action=edit&amp;section=9" title="Edit section: Compiler support">edit</a>]</span> <span class="mw-headline" id="Compiler_support">Compiler support</span></h2>
+<p><a href="/mwiki/index.php?title=Template:c/compiler_support/11&amp;action=edit&amp;redlink=1" class="new" title="Template:c/compiler support/11 (page does not exist)">Template:c/compiler support/11</a>
+</p>
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 1556/1000000
+Preprocessor generated node count: 3344/1000000
+Post‐expand include size: 22467/4194304 bytes
+Template argument size: 4490/4194304 bytes
+Highest expansion depth: 13/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:20604-0!*!0!!en!*!* and timestamp 20250215222416 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/11&amp;oldid=179936">https://en.cppreference.com/mwiki/index.php?title=c/11&amp;oldid=179936</a>"                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div id='catlinks' class='catlinks catlinks-allhidden'></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul>
+<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a href="/w/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-FAQ"><a href="/w/Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="/w/Cppreference:Archives">Offline version</a></li>            </ul>
+        </div>
+                        <div id="cpp-toolbox">
+            <h5><span>Toolbox</span><a href="#"></a></h5>
+            <ul>
+<li id="t-whatlinkshere"><a href="/w/Special:WhatLinksHere/c/11" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/w/Special:RecentChangesLinked/c/11" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/w/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/mwiki/index.php?title=c/11&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/mwiki/index.php?title=c/11&amp;oldid=179936" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/mwiki/index.php?title=c/11&amp;action=info">Page information</a></li>            </ul>
+        </div>
+                        <div id="cpp-languages">
+            <div><ul><li>In other languages</li></ul></div>
+            <div><ul>
+<li class="interwiki-ar"><a href="http://ar.cppreference.com/w/c/11" title="c/11" lang="ar" hreflang="ar">العربية</a></li><li class="interwiki-cs"><a href="http://cs.cppreference.com/w/c/11" title="c/11" lang="cs" hreflang="cs">Česky</a></li><li class="interwiki-de"><a href="http://de.cppreference.com/w/c/11" title="c/11" lang="de" hreflang="de">Deutsch</a></li><li class="interwiki-es"><a href="http://es.cppreference.com/w/c/11" title="c/11" lang="es" hreflang="es">Español</a></li><li class="interwiki-fr"><a href="http://fr.cppreference.com/w/c/11" title="c/11" lang="fr" hreflang="fr">Français</a></li><li class="interwiki-it"><a href="http://it.cppreference.com/w/c/11" title="c/11" lang="it" hreflang="it">Italiano</a></li><li class="interwiki-ja"><a href="http://ja.cppreference.com/w/c/11" title="c/11" lang="ja" hreflang="ja">日本語</a></li><li class="interwiki-ko"><a href="http://ko.cppreference.com/w/c/11" title="c/11" lang="ko" hreflang="ko">한국어</a></li><li class="interwiki-pl"><a href="http://pl.cppreference.com/w/c/11" title="c/11" lang="pl" hreflang="pl">Polski</a></li><li class="interwiki-pt"><a href="http://pt.cppreference.com/w/c/11" title="c/11" lang="pt" hreflang="pt">Português</a></li><li class="interwiki-ru"><a href="http://ru.cppreference.com/w/c/11" title="c/11" lang="ru" hreflang="ru">Русский</a></li><li class="interwiki-tr"><a href="http://tr.cppreference.com/w/c/11" title="c/11" lang="tr" hreflang="tr">Türkçe</a></li><li class="interwiki-zh"><a href="http://zh.cppreference.com/w/c/11" title="c/11" lang="zh" hreflang="zh">中文</a></li>            </ul></div>
+        </div>
+            <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 28 January 2025, at 16:05.</li>
+                            </ul>
+                    <ul id="footer-places">
+                                    <li id="footer-places-privacy"><a href="/w/Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
+                                    <li id="footer-places-about"><a href="/w/Cppreference:About" title="Cppreference:About">About cppreference.com</a></li>
+                                    <li id="footer-places-disclaimer"><a href="/w/Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
+                            </ul>
+                                    <ul id="footer-icons" class="noprint">
+                                    <li id="footer-poweredbyico">
+                                            <a href="//www.mediawiki.org/"><img src="/mwiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>                                            <a href="http://qbnz.com/highlighter/"><img src="//upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" alt="Powered by GeSHi" height="31" width="88" /></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img src="//upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" alt="Hosted by Tiger Technologies" height="31" width="88" /></a>                                        </li>
+                                </ul>
+                        <div style="clear:both">
+            </div>
+            </div>
+        </div>
+        <!-- /footer -->
+        <script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=skins.cppreference2&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
+}</script>
+<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<!-- Served in 0.033 secs. -->
+	</body>
+<!-- Cached 20250215224039 -->
+</html>

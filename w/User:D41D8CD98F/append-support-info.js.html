@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>User:D41D8CD98F/append-support-info.js - cppreference.com</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.21.2" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/mwiki/opensearch_desc.php" title="cppreference.com (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="https://en.cppreference.com/mwiki/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.ColiruCompiler%2CMathJax%2CStandardRevisions%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
+
+<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"User","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":2,"wgPageName":"User:D41D8CD98F/append-support-info.js","wgTitle":"D41D8CD98F/append-support-info.js","wgCurRevisionId":150413,"wgArticleId":21538,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"User:D41D8CD98F/append-support-info.js","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+<style type="text/css">/*<![CDATA[*/
+.source-javascript {line-height: normal;}
+.source-javascript li, .source-javascript pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for javascript
+ * CSS class: source-javascript, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.javascript.source-javascript .de1, .javascript.source-javascript .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.javascript.source-javascript  {font-family:monospace;}
+.javascript.source-javascript .imp {font-weight: bold; color: red;}
+.javascript.source-javascript li, .javascript.source-javascript .li1 {font-weight: normal; vertical-align:top;}
+.javascript.source-javascript .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.javascript.source-javascript .li2 {font-weight: bold; vertical-align:top;}
+.javascript.source-javascript .kw1 {color: #000066; font-weight: bold;}
+.javascript.source-javascript .kw2 {color: #003366; font-weight: bold;}
+.javascript.source-javascript .kw3 {color: #000066;}
+.javascript.source-javascript .co1 {color: #006600; font-style: italic;}
+.javascript.source-javascript .co2 {color: #009966; font-style: italic;}
+.javascript.source-javascript .coMULTI {color: #006600; font-style: italic;}
+.javascript.source-javascript .es0 {color: #000099; font-weight: bold;}
+.javascript.source-javascript .br0 {color: #009900;}
+.javascript.source-javascript .sy0 {color: #339933;}
+.javascript.source-javascript .st0 {color: #3366CC;}
+.javascript.source-javascript .nu0 {color: #CC0000;}
+.javascript.source-javascript .me1 {color: #660066;}
+.javascript.source-javascript .ln-xtra, .javascript.source-javascript li.ln-xtra, .javascript.source-javascript div.ln-xtra {background-color: #ffc;}
+.javascript.source-javascript span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-2 ns-subject page-User_D41D8CD98F_append-support-info_js skin-cppreference2 action-view">
+        <!-- header -->
+        <div id="mw-head" class="noprint">
+            <div id="cpp-head-first-base">
+                <div id="cpp-head-first">
+                    <h5><a href="/">
+                        cppreference.com                        </a></h5>
+                    <div id="cpp-head-search">
+                        
+<!-- 0 -->
+<div id="p-search">
+<form action="https://duckduckgo.com/" method="get">
+  <input type="hidden" name="sites" value="cppreference.com">
+  <input type="search" name="q">
+  <input type="submit" value="Search">
+</form>
+</div>
+
+<!-- /0 -->
+                    </div>
+                    <div id="cpp-head-personal">
+                        
+<!-- 0 -->
+<div id="p-personal" class="">
+<span id="pt-createaccount"><a href="/mwiki/index.php?title=Special:UserLogin&amp;returnto=User%3AD41D8CD98F%2Fappend-support-info.js&amp;type=signup">Create account</a></span>	<div class="menu">
+        <ul>
+<li id="pt-login"><a href="/mwiki/index.php?title=Special:UserLogin&amp;returnto=User%3AD41D8CD98F%2Fappend-support-info.js" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>        </ul>
+    </div>
+</div>
+
+<!-- /0 -->
+                    </div>
+
+                </div>
+            </div>
+            <div id="cpp-head-second-base">
+                <div id="cpp-head-second">
+                    <div id="cpp-head-tools-left">
+                        
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li  id="ca-nstab-user" class="selected"><span><a href="/w/User:D41D8CD98F/append-support-info.js"  title="View the user page [c]" accesskey="c">User page</a></span></li>
+					<li  id="ca-talk" class="new"><span><a href="/mwiki/index.php?title=User_talk:D41D8CD98F/append-support-info.js&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                    <div id="cpp-head-tools-right">
+                        
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="/w/User:D41D8CD98F/append-support-info.js" >View</a></span></li>
+					<li id="ca-viewsource"><span><a href="/mwiki/index.php?title=User:D41D8CD98F/append-support-info.js&amp;action=edit"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="/mwiki/index.php?title=User:D41D8CD98F/append-support-info.js&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">History</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /header -->
+        <!-- content -->
+<style type="text/css">
+#carbonads {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  left: -170px;
+  max-width: 150px;
+  border-radius: 4px;
+  border: solid 1px hsla(0, 0%, 0%, .1);
+  background-color: hsl(0, 0%, 98%);
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+  Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#carbonads a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#carbonads a:hover {
+  color: inherit;
+}
+
+#carbonads span {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.carbon-img {
+  display: block;
+  margin-bottom: 8px;
+  max-width: 150px;
+  line-height: 1;
+}
+
+.carbon-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px !important;
+  width: 150px;
+  height: auto;
+}
+
+.carbon-text {
+  display: block;
+  padding: 0 1em 8px;
+}
+
+.carbon-poweredby {
+  display: block;
+  padding: 8px 12px;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1;
+}
+html { font-variant-ligatures: no-common-ligatures; }
+</style>
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYITK7M&placement=cppreferencecom" id="_carbonads_js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading">User:D41D8CD98F/append-support-info.js</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    <div id="siteSub">From cppreference.com</div>
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    <div id="contentSub"></div>
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div id="mw-clearyourcache" lang="en" dir="ltr" class="mw-content-ltr">
+<p><b>Note:</b> After saving, you may have to bypass your browser's cache to see the changes.
+</p>
+<ul><li> <b>Firefox / Safari:</b> Hold <i>Shift</i> while clicking <i>Reload</i>, or press either <i>Ctrl-F5</i> or <i>Ctrl-R</i> (<i>⌘-R</i> on a Mac)
+</li><li> <b>Google Chrome:</b> Press <i>Ctrl-Shift-R</i> (<i>⌘-Shift-R</i> on a Mac)
+</li><li> <b>Internet Explorer:</b> Hold <i>Ctrl</i> while clicking <i>Refresh</i>, or press <i>Ctrl-F5</i>
+</li><li> <b>Opera:</b> Clear the cache in <i>Tools → Preferences</i>
+</li></ul>
+</div>
+<div dir="ltr"><pre class="javascript source-javascript"><span class="kw1">if</span> <span class="br0">&#40;</span>mw <span class="sy0">&amp;&amp;</span> mw.<span class="me1">config</span>.<span class="me1">get</span><span class="br0">&#40;</span><span class="st0">'wgNamespaceNumber'</span><span class="br0">&#41;</span> <span class="sy0">===</span> <span class="nu0">0</span><span class="br0">&#41;</span>
+<span class="br0">&#40;</span><span class="kw2">function</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+<span class="kw2">const</span> HEADLINE_TEXT <span class="sy0">=</span> <span class="st0">'Support status'</span><span class="sy0">;</span>
+<span class="kw2">const</span> NOTE_TEMPLATE <span class="sy0">=</span>
+    <span class="st0">'&lt;small&gt;The support data are automatically generated from $0. Some rows might be inapplicable to this page.&lt;/small&gt;'</span><span class="sy0">;</span>
+<span class="kw2">const</span> CXX_SUPPORT_LINK <span class="sy0">=</span> <span class="st0">'&lt;a href=&quot;/w/cpp/compiler_support&quot; title=&quot;cpp/compiler support&quot;&gt;C++ compiler support&lt;/a&gt;'</span><span class="sy0">;</span>
+<span class="kw2">const</span> C_SUPPORT_LINK <span class="sy0">=</span> <span class="st0">'&lt;a href=&quot;/w/c/compiler_support&quot; title=&quot;c/compiler support&quot;&gt;C compiler support&lt;/a&gt;'</span><span class="sy0">;</span>
+<span class="kw2">const</span> MISSING_CELL <span class="sy0">=</span>
+    <span class="st0">'&lt;td style=&quot;background:#ececec;color:grey;vertical-align:middle;text-align:center;&quot; class=&quot;table-na&quot;&gt;'</span> <span class="sy0">+</span>
+    <span class="st0">'&lt;small&gt;N/A&lt;/small&gt;&lt;/td&gt;'</span><span class="sy0">;</span>
+<span class="kw2">const</span> TABLE_HEAD_TEXT <span class="sy0">=</span> <span class="st0">'Feature<span class="es0">\n</span><span class="es0">\x</span>A0'</span><span class="sy0">;</span>
+&nbsp;
+async <span class="kw2">function</span> fetch_pages<span class="br0">&#40;</span>pagenames<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="kw2">const</span> params <span class="sy0">=</span> <span class="kw2">new</span> URLSearchParams<span class="br0">&#40;</span><span class="br0">&#123;</span>
+        format<span class="sy0">:</span> <span class="st0">'json'</span><span class="sy0">,</span>
+        action<span class="sy0">:</span> <span class="st0">'query'</span><span class="sy0">,</span>
+        prop<span class="sy0">:</span> <span class="st0">'revisions'</span><span class="sy0">,</span>
+        rvprop<span class="sy0">:</span> <span class="st0">'content'</span><span class="sy0">,</span>
+        rvparse<span class="sy0">:</span> <span class="kw2">true</span><span class="sy0">,</span>
+        titles<span class="sy0">:</span> pagenames.<span class="me1">join</span><span class="br0">&#40;</span><span class="st0">'|'</span><span class="br0">&#41;</span><span class="sy0">,</span>
+    <span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="kw2">const</span> apiresult <span class="sy0">=</span> await fetch<span class="br0">&#40;</span><span class="st0">'/mwiki/api.php?'</span> <span class="sy0">+</span> params.<span class="me1">toString</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>.<span class="me1">then</span><span class="br0">&#40;</span>r <span class="sy0">=&gt;</span> r.<span class="me1">json</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="kw1">return</span> Object.<span class="me1">values</span><span class="br0">&#40;</span>apiresult.<span class="me1">query</span>.<span class="me1">pages</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="kw2">function</span> get_revision_marker_in_page<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="kw2">const</span> marker <span class="sy0">=</span> document.<span class="me1">querySelector</span><span class="br0">&#40;</span><span class="st0">'#firstHeading &gt; .t-mark-rev'</span><span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="kw1">if</span> <span class="br0">&#40;</span>marker <span class="sy0">!==</span> <span class="kw2">null</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw1">return</span> <span class="br0">&#91;</span><span class="kw2">new</span> Set<span class="br0">&#40;</span>marker.<span class="me1">classList</span><span class="br0">&#41;</span><span class="br0">&#93;</span><span class="sy0">;</span>
+    <span class="br0">&#125;</span>
+    <span class="kw2">const</span> dcl <span class="sy0">=</span> Array.<span class="me1">from</span><span class="br0">&#40;</span>document.<span class="me1">querySelectorAll</span><span class="br0">&#40;</span><span class="st0">'.t-dcl-begin:not(h3 ~ *, .t-member *)'</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="kw2">const</span> elems <span class="sy0">=</span> dcl.<span class="me1">flatMap</span><span class="br0">&#40;</span>elem <span class="sy0">=&gt;</span> Array.<span class="me1">from</span><span class="br0">&#40;</span>elem.<span class="me1">querySelectorAll</span><span class="br0">&#40;</span><span class="st0">'.t-dcl-rev-notes, .t-dcl:not(.t-dcl-rev-notes *)'</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="kw1">return</span> elems.<span class="me1">map</span><span class="br0">&#40;</span>elem <span class="sy0">=&gt;</span> <span class="kw2">new</span> Set<span class="br0">&#40;</span>elem.<span class="me1">classList</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="kw2">function</span> guess_relevant_revs<span class="br0">&#40;</span>lang<span class="sy0">,</span> revs<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="kw2">const</span> markers_class_sets <span class="sy0">=</span> get_revision_marker_in_page<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+    <span class="kw1">if</span> <span class="br0">&#40;</span>markers_class_sets.<span class="me1">length</span> <span class="sy0">===</span> <span class="nu0">0</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw1">return</span> revs<span class="sy0">;</span>
+    <span class="br0">&#125;</span>
+&nbsp;
+    let since <span class="sy0">=</span> revs.<span class="me1">length</span><span class="sy0">,</span> until <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>
+    <span class="kw1">for</span> <span class="br0">&#40;</span><span class="kw2">const</span> class_set of markers_class_sets<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        let has_since <span class="sy0">=</span> <span class="kw2">false</span><span class="sy0">;</span>
+        let has_until <span class="sy0">=</span> <span class="kw2">false</span><span class="sy0">;</span>
+        <span class="kw1">for</span> <span class="br0">&#40;</span><span class="kw2">const</span> <span class="br0">&#91;</span>i<span class="sy0">,</span> rev<span class="br0">&#93;</span> of revs.<span class="me1">entries</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            <span class="kw1">if</span> <span class="br0">&#40;</span>class_set.<span class="me1">has</span><span class="br0">&#40;</span>`t<span class="sy0">-</span>since<span class="sy0">-</span>$<span class="br0">&#123;</span>lang<span class="br0">&#125;</span>$<span class="br0">&#123;</span>rev<span class="br0">&#125;</span>`<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+                has_since <span class="sy0">=</span> <span class="kw2">true</span><span class="sy0">;</span>
+                since <span class="sy0">=</span> Math.<span class="me1">min</span><span class="br0">&#40;</span>since<span class="sy0">,</span> i<span class="br0">&#41;</span><span class="sy0">;</span>
+            <span class="br0">&#125;</span>
+            <span class="kw1">if</span> <span class="br0">&#40;</span>class_set.<span class="me1">has</span><span class="br0">&#40;</span>`t<span class="sy0">-</span>until<span class="sy0">-</span>$<span class="br0">&#123;</span>lang<span class="br0">&#125;</span>$<span class="br0">&#123;</span>rev<span class="br0">&#125;</span>`<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+                has_until <span class="sy0">=</span> <span class="kw2">true</span><span class="sy0">;</span>
+                until <span class="sy0">=</span> Math.<span class="me1">max</span><span class="br0">&#40;</span>until<span class="sy0">,</span> i<span class="br0">&#41;</span><span class="sy0">;</span>
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span>
+        since <span class="sy0">=</span> has_since <span class="sy0">?</span> since <span class="sy0">:</span> <span class="nu0">0</span><span class="sy0">;</span>
+        until <span class="sy0">=</span> has_until <span class="sy0">?</span> until <span class="sy0">:</span> revs.<span class="me1">length</span><span class="sy0">;</span>
+    <span class="br0">&#125;</span>
+&nbsp;
+    <span class="kw1">return</span> revs.<span class="me1">slice</span><span class="br0">&#40;</span>since<span class="sy0">,</span> until <span class="sy0">+</span> <span class="nu0">1</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="kw2">function</span> convert_table_to_array<span class="br0">&#40;</span>table<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="kw2">const</span> result <span class="sy0">=</span> <span class="br0">&#91;</span><span class="br0">&#93;</span><span class="sy0">;</span>
+    let row_index <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>
+    <span class="kw1">for</span> <span class="br0">&#40;</span><span class="kw2">const</span> row of table.<span class="me1">rows</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy0">!</span>result<span class="br0">&#91;</span>row_index<span class="br0">&#93;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            result<span class="br0">&#91;</span>row_index<span class="br0">&#93;</span> <span class="sy0">=</span> <span class="br0">&#91;</span><span class="br0">&#93;</span><span class="sy0">;</span>
+        <span class="br0">&#125;</span>
+        let cell_index <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>
+        <span class="kw1">for</span> <span class="br0">&#40;</span><span class="kw2">const</span> cell of row.<span class="me1">cells</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            <span class="kw1">while</span> <span class="br0">&#40;</span>result<span class="br0">&#91;</span>row_index<span class="br0">&#93;</span><span class="br0">&#91;</span>cell_index<span class="br0">&#93;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+                <span class="sy0">++</span>cell_index<span class="sy0">;</span>
+            <span class="br0">&#125;</span>
+            <span class="kw1">for</span> <span class="br0">&#40;</span>let i <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> cell.<span class="me1">rowSpan</span><span class="sy0">;</span> <span class="sy0">++</span>i<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+                <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy0">!</span>result<span class="br0">&#91;</span>row_index <span class="sy0">+</span> i<span class="br0">&#93;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+                    result<span class="br0">&#91;</span>row_index <span class="sy0">+</span> i<span class="br0">&#93;</span> <span class="sy0">=</span> <span class="br0">&#91;</span><span class="br0">&#93;</span><span class="sy0">;</span>
+                <span class="br0">&#125;</span>
+                result<span class="br0">&#91;</span>row_index <span class="sy0">+</span> i<span class="br0">&#93;</span><span class="br0">&#91;</span>cell_index<span class="br0">&#93;</span> <span class="sy0">=</span> cell<span class="sy0">;</span>
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span>
+        <span class="sy0">++</span>row_index<span class="sy0">;</span>
+    <span class="br0">&#125;</span>
+    <span class="kw1">return</span> result<span class="sy0">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="kw2">function</span> process_feature_test_macro_table<span class="br0">&#40;</span>table<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="kw2">const</span> arr <span class="sy0">=</span> convert_table_to_array<span class="br0">&#40;</span>table<span class="br0">&#41;</span>.<span class="me1">slice</span><span class="br0">&#40;</span><span class="nu0">1</span><span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="kw1">if</span> <span class="br0">&#40;</span>table.<span class="me1">matches</span><span class="br0">&#40;</span><span class="st0">'.ftm-has-value'</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw1">return</span> arr.<span class="me1">map</span><span class="br0">&#40;</span>row <span class="sy0">=&gt;</span> <span class="br0">&#40;</span><span class="br0">&#123;</span><span class="kw3">name</span><span class="sy0">:</span> row<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span>.<span class="me1">textContent</span>.<span class="me1">trim</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">,</span> value<span class="sy0">:</span> row<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span>.<span class="me1">textContent</span>.<span class="me1">trim</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#125;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="br0">&#125;</span> <span class="kw1">else</span> <span class="br0">&#123;</span>
+        <span class="kw1">return</span> arr.<span class="me1">map</span><span class="br0">&#40;</span>row <span class="sy0">=&gt;</span> <span class="br0">&#40;</span><span class="br0">&#123;</span><span class="kw3">name</span><span class="sy0">:</span> row<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span>.<span class="me1">textContent</span>.<span class="me1">trim</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">,</span> value<span class="sy0">:</span> undefined<span class="br0">&#125;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="kw2">function</span> get_paper_numbers_in_row<span class="br0">&#40;</span>row<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="kw1">return</span> Array.<span class="me1">from</span><span class="br0">&#40;</span>row.<span class="me1">at</span><span class="br0">&#40;</span><span class="sy0">-</span><span class="nu0">1</span><span class="br0">&#41;</span>.<span class="me1">querySelectorAll</span><span class="br0">&#40;</span><span class="st0">'.external'</span><span class="br0">&#41;</span><span class="br0">&#41;</span>.<span class="me1">map</span><span class="br0">&#40;</span>link <span class="sy0">=&gt;</span> link.<span class="me1">text</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+async <span class="kw2">function</span> guess_relevant_papers_from_feature_test_macros<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="kw2">const</span> ftm_tables <span class="sy0">=</span> Array.<span class="me1">from</span><span class="br0">&#40;</span>document.<span class="me1">querySelectorAll</span><span class="br0">&#40;</span><span class="st0">'.ftm-begin'</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="kw2">const</span> macros <span class="sy0">=</span> ftm_tables.<span class="me1">flatMap</span><span class="br0">&#40;</span>table <span class="sy0">=&gt;</span> process_feature_test_macro_table<span class="br0">&#40;</span>table<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+    <span class="kw1">if</span> <span class="br0">&#40;</span>macros.<span class="me1">length</span> <span class="sy0">===</span> <span class="nu0">0</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw1">return</span> <span class="br0">&#91;</span><span class="br0">&#93;</span><span class="sy0">;</span>
+    <span class="br0">&#125;</span>
+&nbsp;
+    <span class="kw2">const</span> ftm_page <span class="sy0">=</span> await fetch_pages<span class="br0">&#40;</span><span class="br0">&#91;</span><span class="st0">'cpp/feature test'</span><span class="br0">&#93;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="kw2">const</span> ftm_page_content <span class="sy0">=</span> <span class="kw2">new</span> DOMParser<span class="br0">&#40;</span><span class="br0">&#41;</span>.<span class="me1">parseFromString</span><span class="br0">&#40;</span>ftm_page<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span>.<span class="me1">revisions</span><span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span><span class="br0">&#91;</span><span class="st0">'*'</span><span class="br0">&#93;</span><span class="sy0">,</span> <span class="st0">'text/html'</span><span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="kw2">const</span> data_tables <span class="sy0">=</span> Array.<span class="me1">from</span><span class="br0">&#40;</span>ftm_page_content.<span class="me1">querySelectorAll</span><span class="br0">&#40;</span><span class="st0">'.wikitable'</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="kw2">const</span> data_rows <span class="sy0">=</span> data_tables.<span class="me1">flatMap</span><span class="br0">&#40;</span>table <span class="sy0">=&gt;</span> convert_table_to_array<span class="br0">&#40;</span>table<span class="br0">&#41;</span>.<span class="me1">slice</span><span class="br0">&#40;</span><span class="nu0">1</span><span class="sy0">,</span> <span class="sy0">-</span><span class="nu0">1</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+    <span class="kw2">const</span> relevant_rows <span class="sy0">=</span> <span class="br0">&#91;</span><span class="br0">&#93;</span><span class="sy0">;</span>
+    <span class="kw1">for</span> <span class="br0">&#40;</span><span class="kw2">const</span> row of data_rows<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw2">const</span> <span class="kw3">name</span> <span class="sy0">=</span> row<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span>.<span class="me1">textContent</span>.<span class="me1">trim</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+        <span class="kw2">const</span> value <span class="sy0">=</span> row<span class="br0">&#91;</span><span class="nu0">2</span><span class="br0">&#93;</span>.<span class="me1">textContent</span>.<span class="me1">trim</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+        <span class="kw1">for</span> <span class="br0">&#40;</span><span class="kw2">const</span> macro of macros<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            <span class="kw1">if</span> <span class="br0">&#40;</span>macro.<span class="kw3">name</span> <span class="sy0">===</span> <span class="kw3">name</span> <span class="sy0">&amp;&amp;</span> <span class="br0">&#40;</span><span class="sy0">!</span>macro.<span class="me1">value</span> <span class="sy0">||</span> macro.<span class="me1">value</span> <span class="sy0">===</span> value<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+                relevant_rows.<span class="me1">push</span><span class="br0">&#40;</span>row<span class="br0">&#41;</span><span class="sy0">;</span>
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+&nbsp;
+    <span class="kw1">return</span> relevant_rows.<span class="me1">flatMap</span><span class="br0">&#40;</span>row <span class="sy0">=&gt;</span> get_paper_numbers_in_row<span class="br0">&#40;</span>row<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="kw2">function</span> is_relevant_row<span class="br0">&#40;</span>row<span class="sy0">,</span> relevant_papers<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="kw2">const</span> links <span class="sy0">=</span> Array.<span class="me1">from</span><span class="br0">&#40;</span>row.<span class="me1">querySelectorAll</span><span class="br0">&#40;</span><span class="st0">'a'</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="kw1">if</span> <span class="br0">&#40;</span>links.<span class="me1">some</span><span class="br0">&#40;</span>a <span class="sy0">=&gt;</span> `$<span class="br0">&#123;</span>document.<span class="me1">URL</span><span class="br0">&#125;</span><span class="sy0">/</span>`.<span class="me1">startsWith</span><span class="br0">&#40;</span>`$<span class="br0">&#123;</span>a.<span class="me1">href</span><span class="br0">&#125;</span><span class="sy0">/</span>`<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw1">return</span> <span class="kw2">true</span><span class="sy0">;</span>
+    <span class="br0">&#125;</span>
+    <span class="kw2">const</span> header <span class="sy0">=</span> document.<span class="me1">querySelector</span><span class="br0">&#40;</span><span class="st0">'.t-dcl-begin .t-dsc-header a'</span><span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="kw1">if</span> <span class="br0">&#40;</span>header <span class="sy0">&amp;&amp;</span> links.<span class="me1">some</span><span class="br0">&#40;</span>a <span class="sy0">=&gt;</span> a.<span class="me1">href</span> <span class="sy0">===</span> header.<span class="me1">href</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw1">return</span> <span class="kw2">true</span><span class="sy0">;</span>
+    <span class="br0">&#125;</span>
+    <span class="kw2">const</span> papers <span class="sy0">=</span> Array.<span class="me1">from</span><span class="br0">&#40;</span>row.<span class="me1">querySelectorAll</span><span class="br0">&#40;</span><span class="st0">'.external'</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="kw1">if</span> <span class="br0">&#40;</span>papers.<span class="me1">some</span><span class="br0">&#40;</span>paper <span class="sy0">=&gt;</span> relevant_papers.<span class="me1">includes</span><span class="br0">&#40;</span>paper.<span class="me1">text</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw1">return</span> <span class="kw2">true</span><span class="sy0">;</span>
+    <span class="br0">&#125;</span>
+    <span class="kw1">return</span> <span class="kw2">false</span><span class="sy0">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="kw2">function</span> get_relevant_rows<span class="br0">&#40;</span>content<span class="sy0">,</span> selector<span class="sy0">,</span> papers<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="kw2">const</span> table <span class="sy0">=</span> content.<span class="me1">querySelector</span><span class="br0">&#40;</span>selector<span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy0">!</span>table<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw1">return</span> <span class="br0">&#123;</span>body<span class="sy0">:</span> <span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#125;</span><span class="sy0">;</span>
+    <span class="br0">&#125;</span>
+    <span class="kw2">const</span> rows <span class="sy0">=</span> Array.<span class="me1">from</span><span class="br0">&#40;</span>table.<span class="me1">querySelectorAll</span><span class="br0">&#40;</span><span class="st0">'tr'</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="kw2">const</span> relevant_rows <span class="sy0">=</span> rows.<span class="me1">slice</span><span class="br0">&#40;</span><span class="nu0">1</span><span class="sy0">,</span> <span class="sy0">-</span><span class="nu0">1</span><span class="br0">&#41;</span>.<span class="me1">filter</span><span class="br0">&#40;</span>row <span class="sy0">=&gt;</span> is_relevant_row<span class="br0">&#40;</span>row<span class="sy0">,</span> papers<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="kw1">return</span> <span class="br0">&#123;</span>head<span class="sy0">:</span> rows<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span><span class="sy0">,</span> body<span class="sy0">:</span> relevant_rows<span class="br0">&#125;</span><span class="sy0">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="kw2">function</span> get_relevant_data<span class="br0">&#40;</span>content<span class="sy0">,</span> papers<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="kw1">return</span> <span class="br0">&#123;</span>
+        compiler_support<span class="sy0">:</span> get_relevant_rows<span class="br0">&#40;</span>content<span class="sy0">,</span> <span class="st0">'.t-compiler-support-top'</span><span class="sy0">,</span> papers<span class="br0">&#41;</span><span class="sy0">,</span>
+        library_support<span class="sy0">:</span> get_relevant_rows<span class="br0">&#40;</span>content<span class="sy0">,</span> <span class="st0">'.t-standard-library-support-top'</span><span class="sy0">,</span> papers<span class="br0">&#41;</span><span class="sy0">,</span>
+    <span class="br0">&#125;</span><span class="sy0">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="kw2">function</span> are_matching_cells<span class="br0">&#40;</span>cell1<span class="sy0">,</span> cell2<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="kw1">return</span> cell1.<span class="me1">textContent</span>.<span class="me1">trim</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">===</span> cell2.<span class="me1">textContent</span>.<span class="me1">trim</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="kw2">function</span> fixup_missing_columns<span class="br0">&#40;</span>dst_data<span class="sy0">,</span> src_data<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="kw2">const</span> dst_head_cells <span class="sy0">=</span> Array.<span class="me1">from</span><span class="br0">&#40;</span>dst_data.<span class="me1">head</span>.<span class="me1">cells</span><span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="kw2">const</span> src_head_cells <span class="sy0">=</span> src_data.<span class="me1">head</span>.<span class="me1">cells</span><span class="sy0">;</span>
+    <span class="kw1">for</span> <span class="br0">&#40;</span>let i <span class="sy0">=</span> <span class="nu0">1</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> src_head_cells.<span class="me1">length</span><span class="sy0">;</span> <span class="sy0">++</span>i<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw2">const</span> src_cell <span class="sy0">=</span> src_head_cells<span class="br0">&#91;</span>i<span class="br0">&#93;</span><span class="sy0">;</span>
+        <span class="kw2">const</span> src_cell_in_dst_head <span class="sy0">=</span> dst_head_cells.<span class="me1">some</span><span class="br0">&#40;</span>dst_cell <span class="sy0">=&gt;</span> are_matching_cells<span class="br0">&#40;</span>dst_cell<span class="sy0">,</span> src_cell<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+        <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy0">!</span>src_cell_in_dst_head<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            dst_data.<span class="me1">head</span>.<span class="me1">insertBefore</span><span class="br0">&#40;</span>src_cell.<span class="me1">cloneNode</span><span class="br0">&#40;</span><span class="kw2">true</span><span class="br0">&#41;</span><span class="sy0">,</span> dst_head_cells<span class="br0">&#91;</span>i<span class="br0">&#93;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+            <span class="kw1">for</span> <span class="br0">&#40;</span><span class="kw2">const</span> row of dst_data.<span class="me1">body</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+                <span class="kw2">const</span> cell <span class="sy0">=</span> row.<span class="me1">insertCell</span><span class="br0">&#40;</span>i<span class="br0">&#41;</span><span class="sy0">;</span>
+                cell.<span class="me1">outerHTML</span> <span class="sy0">=</span> MISSING_CELL<span class="sy0">;</span>
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="kw2">function</span> merge_support_data<span class="br0">&#40;</span>old_data<span class="sy0">,</span> new_data<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy0">!</span>new_data.<span class="me1">head</span> <span class="sy0">||</span> new_data.<span class="me1">body</span>.<span class="me1">length</span> <span class="sy0">===</span> <span class="nu0">0</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw1">return</span><span class="sy0">;</span>
+    <span class="br0">&#125;</span> <span class="kw1">else</span> <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy0">!</span>old_data.<span class="me1">head</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        old_data.<span class="me1">head</span> <span class="sy0">=</span> new_data.<span class="me1">head</span><span class="sy0">;</span>
+        old_data.<span class="me1">body</span> <span class="sy0">=</span> new_data.<span class="me1">body</span><span class="sy0">;</span>
+    <span class="br0">&#125;</span> <span class="kw1">else</span> <span class="br0">&#123;</span>
+        fixup_missing_columns<span class="br0">&#40;</span>old_data<span class="sy0">,</span> new_data<span class="br0">&#41;</span><span class="sy0">;</span>
+        fixup_missing_columns<span class="br0">&#40;</span>new_data<span class="sy0">,</span> old_data<span class="br0">&#41;</span><span class="sy0">;</span>
+        old_data.<span class="me1">body</span> <span class="sy0">=</span> old_data.<span class="me1">body</span>.<span class="me1">concat</span><span class="br0">&#40;</span>new_data.<span class="me1">body</span><span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="kw2">function</span> append_support_table<span class="br0">&#40;</span>current_page_content<span class="sy0">,</span> data<span class="sy0">,</span> kind<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="kw1">if</span> <span class="br0">&#40;</span>data.<span class="me1">body</span>.<span class="me1">length</span> <span class="sy0">!==</span> <span class="nu0">0</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw2">const</span> table <span class="sy0">=</span> document.<span class="me1">createElement</span><span class="br0">&#40;</span><span class="st0">'table'</span><span class="br0">&#41;</span><span class="sy0">;</span>
+        table.<span class="me1">classList</span>.<span class="me1">add</span><span class="br0">&#40;</span><span class="st0">'wikitable'</span><span class="sy0">,</span> <span class="st0">'support-data-begin'</span><span class="sy0">,</span> `$<span class="br0">&#123;</span>kind<span class="br0">&#125;</span><span class="sy0">-</span>support<span class="sy0">-</span>data<span class="sy0">-</span>begin`<span class="br0">&#41;</span><span class="sy0">;</span>
+        table.<span class="me1">style</span>.<span class="me1">fontSize</span> <span class="sy0">=</span> <span class="st0">'0.8em'</span><span class="sy0">;</span>
+&nbsp;
+        <span class="kw2">const</span> tbody <span class="sy0">=</span> table.<span class="me1">createTBody</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+        <span class="kw2">const</span> head <span class="sy0">=</span> data.<span class="me1">head</span><span class="sy0">;</span>
+        head.<span class="me1">cells</span><span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span>.<span class="me1">innerText</span> <span class="sy0">=</span> TABLE_HEAD_TEXT<span class="sy0">;</span>
+        head.<span class="me1">lastElementChild</span>.<span class="me1">remove</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+        tbody.<span class="me1">append</span><span class="br0">&#40;</span>head<span class="br0">&#41;</span><span class="sy0">;</span>
+        tbody.<span class="me1">append</span><span class="br0">&#40;</span>...<span class="me1">data</span>.<span class="me1">body</span><span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+        current_page_content.<span class="me1">append</span><span class="br0">&#40;</span>table<span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+async <span class="kw2">function</span> append_support_info<span class="br0">&#40;</span>is_cxx<span class="sy0">,</span> revs<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="kw2">const</span> get_pagename <span class="sy0">=</span> rev <span class="sy0">=&gt;</span> `Template<span class="sy0">:</span>$<span class="br0">&#123;</span>is_cxx <span class="sy0">?</span> <span class="st0">'cpp'</span> <span class="sy0">:</span> <span class="st0">'c'</span><span class="br0">&#125;</span><span class="sy0">/</span>compiler support<span class="sy0">/</span>$<span class="br0">&#123;</span>rev<span class="br0">&#125;</span>`<span class="sy0">;</span>
+&nbsp;
+    <span class="kw2">const</span> fetch_data_promise <span class="sy0">=</span> fetch_pages<span class="br0">&#40;</span>revs.<span class="me1">map</span><span class="br0">&#40;</span>get_pagename<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="kw2">const</span> guess_papers_promise <span class="sy0">=</span> guess_relevant_papers_from_feature_test_macros<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+    <span class="kw2">const</span> <span class="br0">&#91;</span>pages<span class="sy0">,</span> relevant_papers<span class="br0">&#93;</span> <span class="sy0">=</span> await Promise.<span class="me1">all</span><span class="br0">&#40;</span><span class="br0">&#91;</span>fetch_data_promise<span class="sy0">,</span> guess_papers_promise<span class="br0">&#93;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+    <span class="kw2">const</span> relevant_revs <span class="sy0">=</span> guess_relevant_revs<span class="br0">&#40;</span>is_cxx <span class="sy0">?</span> <span class="st0">'cxx'</span> <span class="sy0">:</span> <span class="st0">'c'</span><span class="sy0">,</span> revs<span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="kw2">const</span> relevant_pagenames <span class="sy0">=</span> relevant_revs.<span class="me1">map</span><span class="br0">&#40;</span>get_pagename<span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+    <span class="kw2">const</span> relevant_support_pages <span class="sy0">=</span> pages.<span class="me1">filter</span><span class="br0">&#40;</span>page <span class="sy0">=&gt;</span> relevant_pagenames.<span class="me1">includes</span><span class="br0">&#40;</span>page.<span class="me1">title</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+    <span class="kw2">const</span> compiler_support <span class="sy0">=</span> <span class="br0">&#123;</span>body<span class="sy0">:</span> <span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#125;</span><span class="sy0">;</span>
+    <span class="kw2">const</span> library_support <span class="sy0">=</span> <span class="br0">&#123;</span>body<span class="sy0">:</span> <span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#125;</span><span class="sy0">;</span>
+&nbsp;
+    <span class="kw1">for</span> <span class="br0">&#40;</span><span class="kw2">const</span> page of relevant_support_pages<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw2">const</span> content <span class="sy0">=</span> <span class="kw2">new</span> DOMParser<span class="br0">&#40;</span><span class="br0">&#41;</span>.<span class="me1">parseFromString</span><span class="br0">&#40;</span>page.<span class="me1">revisions</span><span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span><span class="br0">&#91;</span><span class="st0">'*'</span><span class="br0">&#93;</span><span class="sy0">,</span> <span class="st0">'text/html'</span><span class="br0">&#41;</span><span class="sy0">;</span>
+        <span class="kw2">const</span> data <span class="sy0">=</span> get_relevant_data<span class="br0">&#40;</span>content<span class="sy0">,</span> relevant_papers<span class="br0">&#41;</span><span class="sy0">;</span>
+        merge_support_data<span class="br0">&#40;</span>compiler_support<span class="sy0">,</span> data.<span class="me1">compiler_support</span><span class="br0">&#41;</span><span class="sy0">;</span>
+        merge_support_data<span class="br0">&#40;</span>library_support<span class="sy0">,</span> data.<span class="me1">library_support</span><span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="br0">&#125;</span>
+&nbsp;
+    <span class="kw2">const</span> current_page_content <span class="sy0">=</span> document.<span class="me1">querySelector</span><span class="br0">&#40;</span><span class="st0">'#mw-content-text'</span><span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="kw1">if</span> <span class="br0">&#40;</span>compiler_support.<span class="me1">body</span>.<span class="me1">length</span> <span class="sy0">!==</span> <span class="nu0">0</span> <span class="sy0">||</span> library_support.<span class="me1">body</span>.<span class="me1">length</span> <span class="sy0">!==</span> <span class="nu0">0</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw2">const</span> headline <span class="sy0">=</span> document.<span class="me1">createElement</span><span class="br0">&#40;</span><span class="st0">'h3'</span><span class="br0">&#41;</span><span class="sy0">;</span>
+        headline.<span class="me1">textContent</span> <span class="sy0">=</span> HEADLINE_TEXT<span class="sy0">;</span>
+        <span class="kw2">const</span> note <span class="sy0">=</span> document.<span class="me1">createElement</span><span class="br0">&#40;</span><span class="st0">'p'</span><span class="br0">&#41;</span><span class="sy0">;</span>
+        note.<span class="me1">innerHTML</span> <span class="sy0">=</span> NOTE_TEMPLATE.<span class="me1">replace</span><span class="br0">&#40;</span><span class="st0">'$0'</span><span class="sy0">,</span> is_cxx <span class="sy0">?</span> CXX_SUPPORT_LINK <span class="sy0">:</span> C_SUPPORT_LINK<span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+        current_page_content.<span class="me1">append</span><span class="br0">&#40;</span>headline<span class="br0">&#41;</span><span class="sy0">;</span>
+        current_page_content.<span class="me1">append</span><span class="br0">&#40;</span>note<span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+        append_support_table<span class="br0">&#40;</span>current_page_content<span class="sy0">,</span> compiler_support<span class="sy0">,</span> <span class="st0">'core'</span><span class="br0">&#41;</span><span class="sy0">;</span>
+        append_support_table<span class="br0">&#40;</span>current_page_content<span class="sy0">,</span> library_support<span class="sy0">,</span> <span class="st0">'lib'</span><span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="kw2">const</span> is_cxx <span class="sy0">=</span> <span class="sy0">!</span>document.<span class="me1">URL</span>.<span class="me1">match</span><span class="br0">&#40;</span><span class="co2">/\bc\//</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">const</span> revs <span class="sy0">=</span> is_cxx <span class="sy0">?</span> <span class="br0">&#91;</span><span class="st0">'11'</span><span class="sy0">,</span> <span class="st0">'14'</span><span class="sy0">,</span> <span class="st0">'17'</span><span class="sy0">,</span> <span class="st0">'20'</span><span class="sy0">,</span> <span class="st0">'23'</span><span class="sy0">,</span> <span class="st0">'26'</span><span class="br0">&#93;</span> <span class="sy0">:</span> <span class="br0">&#91;</span><span class="st0">'99'</span><span class="sy0">,</span> <span class="st0">'23'</span><span class="br0">&#93;</span><span class="sy0">;</span>
+append_support_info<span class="br0">&#40;</span>is_cxx<span class="sy0">,</span> revs<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="br0">&#125;</span><span class="br0">&#41;</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></pre></div></div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=User:D41D8CD98F/append-support-info.js&amp;oldid=150413">https://en.cppreference.com/mwiki/index.php?title=User:D41D8CD98F/append-support-info.js&amp;oldid=150413</a>"                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div id='catlinks' class='catlinks catlinks-allhidden'></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul>
+<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a href="/w/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-FAQ"><a href="/w/Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="/w/Cppreference:Archives">Offline version</a></li>            </ul>
+        </div>
+                        <div id="cpp-toolbox">
+            <h5><span>Toolbox</span><a href="#"></a></h5>
+            <ul>
+<li id="t-whatlinkshere"><a href="/w/Special:WhatLinksHere/User:D41D8CD98F/append-support-info.js" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/w/Special:RecentChangesLinked/User:D41D8CD98F/append-support-info.js" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-contributions"><a href="/w/Special:Contributions/D41D8CD98F" title="A list of contributions of this user">User contributions</a></li><li id="t-log"><a href="/w/Special:Log/D41D8CD98F">Logs</a></li><li id="t-upload"><a href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/w/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/mwiki/index.php?title=User:D41D8CD98F/append-support-info.js&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/mwiki/index.php?title=User:D41D8CD98F/append-support-info.js&amp;oldid=150413" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/mwiki/index.php?title=User:D41D8CD98F/append-support-info.js&amp;action=info">Page information</a></li>            </ul>
+        </div>
+                            <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 10 April 2023, at 22:30.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 1,080 times.</li>
+                            </ul>
+                    <ul id="footer-places">
+                                    <li id="footer-places-privacy"><a href="/w/Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
+                                    <li id="footer-places-about"><a href="/w/Cppreference:About" title="Cppreference:About">About cppreference.com</a></li>
+                                    <li id="footer-places-disclaimer"><a href="/w/Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
+                            </ul>
+                                    <ul id="footer-icons" class="noprint">
+                                    <li id="footer-poweredbyico">
+                                            <a href="//www.mediawiki.org/"><img src="/mwiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>                                            <a href="http://qbnz.com/highlighter/"><img src="//upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" alt="Powered by GeSHi" height="31" width="88" /></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img src="//upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" alt="Hosted by Tiger Technologies" height="31" width="88" /></a>                                        </li>
+                                </ul>
+                        <div style="clear:both">
+            </div>
+            </div>
+        </div>
+        <!-- /footer -->
+        <script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=skins.cppreference2&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
+}</script>
+<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<!-- Served in 0.078 secs. -->
+	</body>
+<!-- Cached 20240518033753 -->
+</html>
